@@ -40,7 +40,7 @@ post_status = 'publish'
 ");
     $output = '';
     if($copyright_dates) {
-        $copyright = "&copy; Nifty Tours " . $copyright_dates[0]->firstdate;
+        $copyright = "Copyright &copy; Nifty Tours " . $copyright_dates[0]->firstdate;
         if($copyright_dates[0]->firstdate != $copyright_dates[0]->lastdate) {
             $copyright .= '-' . $copyright_dates[0]->lastdate;
         }

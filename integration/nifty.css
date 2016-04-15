@@ -362,7 +362,7 @@ form input
 {
 	background: none repeat scroll 0% 0% #F7F6F6;
 	padding: 15px;
-	width: 100%;
+	width: 120%;
 	border-radius: 5px;
 	font-size: 16px;
 	font-weight: 400;
@@ -533,3 +533,147 @@ margin-top: 60px;
 .clearit {
 	clear: both;
 }
+
+/* WP Stories styles */
+
+.alignleft {
+	float: left;
+	margin: 5px 10px 5px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 5px 10px;
+}
+
+#main {
+	padding: 2% 1% 30px 1%;
+}
+
+#primary {
+	width: 83%;
+	float: right;
+	padding-bottom: 30px;
+}
+
+
+#secondary {
+	width: 11%;
+	padding: 20px 2% 30px 1.5%;
+	float: left;
+	background-color: #D6D6D6;
+	margin-bottom: 30px;
+}
+
+#secondary .screen-reader-text {
+	visibility: hidden;
+}
+
+article {
+	padding: 50px 20px;
+}
+
+article a {
+	text-decoration: none;
+}
+
+article p {
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+
+article .post-thumbnail img {
+	float: left;
+	margin-right: 20px;
+	max-width: 50%;
+}
+
+article:first-child {
+	padding-top: 0 !important;
+}
+
+article:nth-child(even) {
+	background-color: #24436d;
+	color: white;
+}
+
+article h1.entry-title {
+	padding: 15px;
+}
+
+article h1.entry-title a {
+	font-size: 2.25em;
+	color: #24436d;
+}
+
+article h1.entry-title a:hover {
+	color: #1c97ca;
+}
+
+article:nth-child(even) h1.entry-title a {
+	color: #fff;
+}
+
+article:nth-child(even) h1.entry-title a:hover {
+	color: #1c97ca;
+}
+
+article:nth-child(odd) a {
+	color: #000;
+}
+
+article:nth-child(odd) a:hover {
+	color: #1c97ca;
+}
+
+article:nth-child(even) a {
+	color: #fff;
+}
+
+article:nth-child(even) a:hover {
+	color: #1c97ca;
+}
+
+article .entry-meta {
+	margin-bottom: 20px;
+	font-size: .80em;
+}
+
+aside {
+	margin-bottom: 40px;
+	width: auto;
+}
+
+aside h1 {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+aside a {
+	font-size: .8em;
+	color: #000;
+}
+
+aside a:hover {
+	color: #999;
+}
+
+aside#search-2 {
+	margin-left: 10px;
+}
+
+aside#search-2 input {
+	margin-top: 5px;
+}
+aside#search-2 input[type="submit"] {
+	border: 1px solid #000;
+	padding: 5px;
+	width: 100px;
+	cursor: pointer;
+}
+
+.infooter {
+	color: #585C65;
+}
+
+
