@@ -17,7 +17,7 @@
 <div class="footer">
 	<div class="container">
 		<div class="infooter">
-			<p class="copyright">Copyright &copy; Nifty Tours 2016</p>
+			<?php echo comicpress_copyright(); ?>
 		</div>
 		<ul class="socialmedia">
 			<li><a href="https://www.facebook.com/NiftyTours" target="_blank"><i class="icon-facebook"></i></a></li>
