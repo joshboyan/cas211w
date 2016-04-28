@@ -126,10 +126,14 @@ h2 {
     background: url("../img/sourdough.jpg") no-repeat fixed 0% 0%/cover;
 }
 
+.shopping-btn-container {
+    text-align: center;
+    margin-left: -135px;
+}
+
 .shopping-btn {
-    margin-left: 20%;
     padding: 18px 33px;
-    font-size: 22px; //change this to your desired size
+    font-size: 24px;
     line-height: normal;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -150,6 +154,7 @@ h2 {
     .navbar-form {
         border: none;
     }
+
     .mynav {
         width: 90%;
         background: #000;
@@ -163,13 +168,14 @@ h2 {
         line-height: 1.4;
     }
 
-
-}
     /* Shopping banner
     -------------------------------------------------- */
-
     .shopping-banner {
+        margin-left: -10%;
         background-position: 0 50%;
+        max-width: 1400px;
+    }
+
 
 }
 @media (min-width: 992px) {
