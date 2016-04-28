@@ -1,6 +1,5 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
 body {
     padding-bottom: 40px;
@@ -141,6 +140,11 @@ h2 {
 
 }
 
+.hideme
+{
+    opacity:0;
+}
+
 /* Latest work and news
 -------------------------------------------------- */
 
@@ -171,7 +175,7 @@ h2 {
     /* Shopping banner
     -------------------------------------------------- */
     .shopping-banner {
-        margin-left: -10%;
+        margin-left: -20%;
         background-position: 0 50%;
         max-width: 1400px;
     }

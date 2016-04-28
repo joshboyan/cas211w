@@ -1,3 +1,5 @@
+/*JQuery adding hover animation to feature and news section elements*/
+
 $('#feature1').hover(
     function(){ $('#feature1 .img-circle').addClass('hover') },
     function(){ $('#feature1 .img-circle').removeClass('hover')}
@@ -46,3 +48,33 @@ $('#feature6').hover(
     function(){ $('#feature6 .feature-heading').addClass('slide-up') },
     function(){ $('#feature6 .feature-heading').removeClass('slide-up')}
 );
+
+/*Hide "shop" button then fade into the viewport on scroll*/
+
+$(function(){ $('.shopping-btn-container').addClass('hideme') }
+);
+
+$(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},1000);
+
+            }
+
+        });
+
+    });
+
+});
+
