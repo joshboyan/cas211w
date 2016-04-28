@@ -157,6 +157,16 @@ footer {
     color: #fff;
 }
 
+footer a {
+    width: 40px;
+    height: 40px;
+    padding-top: 15%;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #921717;
+}
 footer ul {
     overflow: auto;
     text-align: center;
@@ -165,18 +175,6 @@ footer ul {
 footer ul li {
     list-style-type: none;
 
-}
-
-footer ul li a i {
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 25px;
-    text-align: center;
-    margin-right: 10px;
-    padding-top: 15%;
-    background: #2b2b2b;
-    color: #fff;
 }
 
 .footer-widget-area {
