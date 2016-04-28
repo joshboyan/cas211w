@@ -25,7 +25,7 @@
     <![endif]-->
 
     <!-- CDN for icons -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
@@ -114,7 +114,7 @@
                 <div class="carousel-caption">
                     <h1>Example headline.</h1>
                     <p>This is a hero image with a link to highlight your star work!</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    <p><a role="button" class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
                 <div class="carousel-caption">
                     <h1>Another example headline.</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore, quis rem repellendus sunt suscipit vitae. Aut blanditiis consequuntur dolor ex iure labore minus placeat quae quo recusandae, velit voluptatibus!</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    <p><a role="button" class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
                 <div class="carousel-caption">
                     <h1>One more for good measure.</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur doloremque, earum et itaque iure laudantium libero omnis ratione recusandae. Architecto blanditiis fugit impedit, iure molestias nisi odit quia soluta?</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    <p><a role="button" class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                 </div>
             </div>
         </div><!-- End third slide -->
@@ -189,7 +189,7 @@
 ================================================== -->
     <section id="shopping">
     <div class="container-fluid shopping-banner">
-        <div class="shopping-btn-container"><a class="btn btn-primary shopping-btn" href="#" role="button">Shop!</a></div>
+        <div class="shopping-btn-container"><a role="button" class="btn btn-primary shopping-btn" href="#" role="button">Shop!</a></div>
     </div>
     </section><!-- /shopping-->
 
@@ -220,13 +220,46 @@
     </div><!-- /.row -->
     </section><!-- /latest work and news -->
 
-    <!-- Footer information
-    ================================================== -->
+<!-- Footer information
+================================================== -->
 
     <section id="footer">
     <footer>
+        <div class="container-fluid">
+        <div class="row footer-widget-area">
+            <div class="col-sm-4 footer-widget">
+                <h4>This is footer widget area 1.</h4>
+                <p>Your local business address needs to be on every page for local SEO and                          accessibility.</p>
+                <div itemscope itemtype="http://schema.org/LocalBusiness">
+                    <p itemprop="name">Unviel Themes</p>
+                    <address itemprop="address">8675 Jenny Street<br>Portland, OR 97201</address>
+                    <p itemprop="telephone"><a href="tel:+15038675309">503-867-5309</a></p>
+                </div>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4 footer-widget">
+                <h4>This is footer widget area 2.</h4>
+                <p>Perhaps for a map?</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.3695911229747!2d-122.72354264845332!3d45.54289017899937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549509c5d1dee599%3A0x4723c3deb944cbe2!2sCasa+Diablo!5e0!3m2!1sen!2sus!4v1461874734884" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4 footer-widget">
+                <h4>This is footer widget area 3.</h4>
+                <p>Perhaps for Social media?</p>
+                <ul>
+                <li><a class="btn" href="#" target="_blank"><i class="fa fa-facebook                        fa-lg"></i></a></li>
+                    <li><a class="btn" href="#" target="_blank"><i class="fa
+                        fa-twitter fa-lg"></i></a></li>
+                    <li><a class="btn" href="#" target="_blank"><i class="fa
+                        fa-google-plus fa-lg"></i></a></li>
+                    <li><a class="btn" href="#" target="_blank"><i class="fa
+                        fa-youtube fa-lg"></i></a></li>
+                </ul>
+            </div><!-- /.col-sm-4 -->
+        </div><!-- /.row -->
+        <div class="row">
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 Unveil Theme &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </div><!-- /.row -->
+        </div><!-- /.container -->
     </footer>
     </section>   <!-- footer -->
 
