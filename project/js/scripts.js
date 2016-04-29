@@ -49,8 +49,17 @@ $('#feature6').hover(
     function(){ $('#feature6 .feature-heading').removeClass('slide-up')}
 );
 
-/*Hide "shop" button then fade into the viewport on scroll*/
 
+/*Fade carousel caprion on scroll*/
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+    $('.carousel-caption').css({
+        'opacity': ((height - scrollTop) / height)
+    });
+});
+
+/*Hide "shop" button then fade into the viewport on scroll*/
 $(function(){ $('.shopping-btn-container').addClass('hideme') }
 );
 

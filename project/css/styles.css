@@ -6,7 +6,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 40px;
-    color: #5a5a5a;
+    background-color: #F6F8F8;
+    color: #1E3D6B;
 }
 
 h2 {
@@ -19,23 +20,38 @@ a:hover {
     -webkit-transform: translate(1px,1px); /* Safari */
     transform: translate(1px,1px);
 }
+
+.btn {
+    border-color: #CC4635;
+    background-color: #5995DD;
+    color: #F6F8F8;
+    text-shadow: #1E3D6B;
+}
+
 /* Navbar
 -------------------------------------------------- */
 .navbar {
-    background: #000;
-    color: #eee;
+    background: #1E3D6B;
+    color: #F6F8F8;
 }
 
 .mynav {
     float: right;
-    overflow: hidden;
-    width: 50%;
-    height: auto;
-    background: #000;
-    color: #eee;
+    background: #1E3D6B;
+    color: #F6F8F8;
 }
 
+.navbar-default .navbar-brand {
+    color: #F6F8F8;
+}
 
+.navbar-default .navbar-nav>li>a {
+    color: #F6F8F8;
+}
+
+.form-btn {
+    border-color: #F6F8F8;
+}
 /* Carousel
 -------------------------------------------------- */
 
@@ -47,11 +63,12 @@ a:hover {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
+    color: #F6F8F8;
     text-shadow:
-        -1px -1px 0 #222,
-        1px -1px 0 #222,
-        -1px 1px 0 #222,
-        1px 1px 0 #222;
+        -1px -1px .5 #1E3D6B,
+        1px -1px .5 #1E3D6B,
+        -1px 1px .5 #1E3D6B,
+        1px 1px 0 #1E3D6B;
 }
 
 /* Declare heights because of positioning of img element */
@@ -102,11 +119,15 @@ a:hover {
     margin-left: 10px;
 }
 
+#featured-work.btn a:hover {
+    background-color: #1E3D6B ;
+ }
     /* JQuery hover CSS */
 
 .img-circle {
     height: 250px;
     width: 250px;
+    box-shadow: 5px 10px 15px #333;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -116,7 +137,9 @@ a:hover {
 
 .hover {
     opacity: .4;
-    background-color: #000;
+    z-index: 10;
+    background-color: #F6F8F8;
+    box-shadow: none;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -135,9 +158,10 @@ a:hover {
 .slide-up {
     margin-top: -140px;
     margin-bottom: 170px;
-    color: #000;
+    z-index: 20;
     font-weight: bold;
-    text-shadow: 1px 1px 0 #921717;
+    opacity: 1;
+    text-shadow: 1px 1px 0 #5995DD;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -185,20 +209,20 @@ a:hover {
 footer {
 
     margin: 0 -50px -55px -50px;
-    background: #2b2b2b;
-    color: #fff;
+    background: #1E3D6B;
+    color: #F6F8F8;
 }
 
 footer a {
     width: 40px;
     height: 40px;
-    padding-top: 15%;
-    color: #fff;
+    color: #F6F8F8;
 }
 
 footer a:hover {
     text-decoration: none;
-    color: #921717;
+    background-color: #1E3D6B;
+    color: #5995DD;
 
 }
 footer ul {
@@ -212,10 +236,10 @@ footer ul li {
     list-style-type: none;
 }
 
-footer ul li a:hover {
-    color: #921717;
+footer .btn {
+    background-color: #1E3D6B;
+    border-color: transparent;
 }
-
 .footer-widget-area {
     padding-top: 55px;
 }
@@ -250,8 +274,6 @@ footer ul li a:hover {
 
     .mynav {
         width: 90%;
-        background: #000;
-        color: #eee;
     }
 
     /* Bump up size of carousel content */
