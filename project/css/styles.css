@@ -19,7 +19,7 @@ a:hover {
     -webkit-transform: translate(1px,1px); /* Safari */
     transform: translate(1px,1px);
 }
-/* CUSTOMIZE THE NAVBAR
+/* Navbar
 -------------------------------------------------- */
 .navbar {
     background: #000;
@@ -36,7 +36,7 @@ a:hover {
 }
 
 
-/* CUSTOMIZE THE CAROUSEL
+/* Carousel
 -------------------------------------------------- */
 
 /* Carousel base class */
@@ -47,6 +47,11 @@ a:hover {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
+    text-shadow:
+        -1px -1px 0 #222,
+        1px -1px 0 #222,
+        -1px 1px 0 #222,
+        1px 1px 0 #222;
 }
 
 /* Declare heights because of positioning of img element */
@@ -132,6 +137,7 @@ a:hover {
     margin-bottom: 170px;
     color: #000;
     font-weight: bold;
+    text-shadow: 1px 1px 0 #921717;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -191,16 +197,23 @@ footer a {
 }
 
 footer a:hover {
+    text-decoration: none;
     color: #921717;
+
 }
 footer ul {
     overflow: auto;
     text-align: center;
     padding-right: 25px;
+    padding-bottom: 20px;
 }
 
 footer ul li {
     list-style-type: none;
+}
+
+footer ul li a:hover {
+    color: #921717;
 }
 
 .footer-widget-area {
@@ -210,6 +223,8 @@ footer ul li {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 599px) {
+    /* Carousel
+    -------------------------------------------------- */
     .first-slide {
         background: url("../img/schnitzel-wide.jpg") no-repeat fixed 0% 0%;
         -webkit-background-size: 992px auto;
@@ -286,22 +301,30 @@ footer ul li {
 }
 
 @media (min-width: 992px) {
-
+    /* Carousel
+    -------------------------------------------------- */
     .first-slide {
-        -webkit-background-size: 1350px auto;
-        background-size: 1350px auto;
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+
     }
 
     .second-slide {
-        -webkit-background-size: 1350px auto;
-        background-size: 1350px auto;
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+
     }
 
     .third-slide {
-        -webkit-background-size: 1350px auto;
-        background-size: 1350px auto;
-    }
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
 
+    }
+    /* Shopping banner
+    -------------------------------------------------- */
     .shopping-banner {
         margin-right: 40%;
     }
