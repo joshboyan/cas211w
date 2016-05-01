@@ -50,7 +50,7 @@ $('#feature6').hover(
 );
 
 
-/*Fade carousel caprion on scroll*/
+/*Fade carousel caption on scroll*/
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height();
@@ -59,7 +59,17 @@ $(window).scroll(function () {
     });
 });
 
+/*Hide carousel banner share icons on load*/
+
+
+$(function(){ $('.carousel-social').addClass('roll_back') }
+);
+
+$(function(){ $('.social').addClass('roll_back_effect') }
+);
+
 /*Hide "shop" button then fade into the viewport on scroll*/
+
 $(function(){ $('.shopping-btn-container').addClass('hideme') }
 );
 

@@ -10,6 +10,7 @@ body {
     color: #1E3D6B;
 }
 
+h1,
 h2 {
     text-align: center;
     margin-bottom: 35px;
@@ -85,6 +86,29 @@ a:hover {
     height: 500px;
 }
 
+.carousel-control .fa-chevron-left,
+.carousel-control .icon-prev {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.carousel-control .fa-chevron-right,
+.carousel-control .icon-next {
+    right: 50%;
+    margin-right: -10px;
+}
+
+.carousel-control .fa-chevron-left,
+.carousel-control .fa-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}
+
 .first-slide {
     background: url("../img/schnitzel.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
@@ -103,6 +127,55 @@ a:hover {
     background-size: 600px auto;
 }
 
+/* Single image Carousel
+-------------------------------------------------- */
+.carousel-social {
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+.carousel-social  li {
+    display: inline;
+    list-style-type: none;
+}
+
+.carousel-social .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5995DD;
+    border-color: #CC4635;
+    padding-top: 18px;
+}
+
+.to_left {
+    -ms-transform: translate(-1000px,0px); /* IE 9 */
+    -webkit-transform: translate(-1000px,0px); /* Safari */
+    transform: translate(-1000px,0px);
+}
+
+.roll_back {
+    -ms-transform: translate(0px,0px); /* IE 9 */
+    -webkit-transform: translate(0px,0px); /* Safari */
+    transform: translate(0px,0px);
+    -webkit-transition: transform 3s ease-out 0s; /* Safari */
+    transition: transform 3s ease-out 0s;
+}
+
+.roll_back_effect {
+    -ms-transform: rotate(720deg); /* IE 9 */
+    -webkit-transform: rotate(720deg); /* Safari */
+    transform: rotate(720deg);
+    -webkit-transition: transform 3s ease-out 0s; /* Safari */
+    transition: transform 3s ease-out 0s;
+}
+
+.about-slide {
+    background: url("../img/pierogis.jpg") no-repeat fixed 0% 0%;
+    -webkit-background-size: 600px auto;
+    background-size: 600px auto;
+}
 /* Marketing messaging, featured work, latest work and news
 -------------------------------------------------- */
 
@@ -186,6 +259,13 @@ a:hover {
     margin-left: -135px;
 }
 
+.shopping-btn-container a:hover{
+    border-color: #CC4635;
+    background-color: #5995DD;
+    color: #1E3D6B;
+    text-shadow: 1px 1px #1E3D6B;
+}
+
 .shopping-btn {
     padding: 18px 33px;
     font-size: 24px;
@@ -223,8 +303,8 @@ footer a:hover {
     text-decoration: none;
     background-color: #1E3D6B;
     color: #5995DD;
-
 }
+
 footer ul {
     overflow: auto;
     text-align: center;
@@ -266,8 +346,17 @@ footer .btn {
         -webkit-background-size: 992px auto;
         background-size: 992px auto;
     }
+    /* Single image Carousel
+    -------------------------------------------------- */
+    .about-slide {
+        background: url("../img/pierogis-wide.jpg") no-repeat fixed 0% 0%;
+        -webkit-background-size: 992px auto;
+        background-size: 992px auto;
+    }
 }
 @media (min-width: 768px) {
+    /* Navbar
+    -------------------------------------------------- */
     .navbar-form {
         border: none;
     }
@@ -276,12 +365,33 @@ footer .btn {
         width: 90%;
     }
 
-    /* Bump up size of carousel content */
+    /* Carousel
+    -------------------------------------------------- */
     .carousel-caption p {
         margin-bottom: 20px;
         font-size: 21px;
         line-height: 1.4;
     }
+
+    .carousel-control .fa-chevron-left,
+    .carousel-control .icon-prev {
+        margin-left: -10px;
+    }
+
+    .carousel-control .fa-chevron-right,
+    .carousel-control .icon-next {
+        margin-right: -10px;
+    }
+
+    .carousel-control .fa-chevron-left,
+    .carousel-control .fa-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        font-size: 30px;
+        }
 
     /* Shopping banner
     -------------------------------------------------- */
@@ -345,6 +455,13 @@ footer .btn {
         background-position: center -100px;
 
     }
+    /* Single image Carousel
+    -------------------------------------------------- */
+    .about-slide {
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+    }
     /* Shopping banner
     -------------------------------------------------- */
     .shopping-banner {
@@ -355,7 +472,7 @@ footer .btn {
     /*Footer
     -------------------------------------------------- */
     footer {
-        margin: 0 -10% -55px -10%;
+        margin: 0 -13% -55px -13%;
     }
     .footer-widget1 {
         padding-left: 7%;
