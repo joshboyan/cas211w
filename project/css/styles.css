@@ -294,7 +294,7 @@ a:hover {
 /*Footer
 -------------------------------------------------- */
 footer {
-    margin: 0 -50px -55px -50px;
+    margin: 0 -0px -55px -50px;
     background: #1E3D6B;
     color: #F6F8F8;
 }
@@ -332,6 +332,11 @@ footer .btn {
 
 /* Blog Page
 -------------------------------------------------- */
+.post_nav {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 400px;
+}
 .post_nav .fa-chevron-left {
     margin-top: 40px;
     -ms-transform: scale(3,3); /* IE 9 */
