@@ -37,11 +37,13 @@ a:hover {
 }
 
 .mynav {
-    float: right;
     background: #1E3D6B;
     color: #F6F8F8;
 }
 
+.dropdown a:hover {
+    color: #F6F8F8;
+}
 .navbar-default .navbar-brand {
     color: #F6F8F8;
 }
@@ -50,8 +52,31 @@ a:hover {
     color: #F6F8F8;
 }
 
+.dropdown-menu {
+    background: #1E3D6B;
+    color: #F6F8F8;
+}
+
+.dropdown-menu li a{
+    background: #1E3D6B;
+    color: #F6F8F8;
+}
+.navbar-form {
+    border-top: none;
+    border-bottom: none;
+    overflow: none;
+}
+
+.navbar-form ul li{
+    overflow: hidden;
+}
+.form-control {
+    width: 90%;
+}
 .form-btn {
     border-color: #F6F8F8;
+    float: right;
+    margin-top: -35px;
 }
 /* Carousel
 -------------------------------------------------- */
@@ -400,9 +425,13 @@ footer .btn {
     }
 
     .mynav {
+        float: right;
         width: 90%;
     }
 
+    .form-btn {
+        margin-top: -1px;
+    }
     /* Carousel
     -------------------------------------------------- */
     .carousel-caption p {
