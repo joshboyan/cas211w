@@ -1,0 +1,563 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    background-color: #F6F8F8;
+    color: #1E3D6B;
+}
+
+.marketing {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px;
+    margin-bottom: -40px;
+}
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+a:hover {
+    -ms-transform: translate(1px,1px); /* IE 9 */
+    -webkit-transform: translate(1px,1px); /* Safari */
+    transform: translate(1px,1px);
+}
+
+.btn {
+    border-color: #CC4635;
+    background-color: #5995DD;
+    color: #F6F8F8;
+    text-shadow: #1E3D6B;
+}
+
+/* Navbar
+-------------------------------------------------- */
+.navbar {
+    background: #1E3D6B;
+    color: #F6F8F8;
+}
+
+.mynav {
+    background: #1E3D6B;
+    color: #F6F8F8;
+}
+
+.dropdown a:hover {
+    color: #F6F8F8;
+}
+.navbar-default .navbar-brand {
+    color: #F6F8F8;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #F6F8F8;
+}
+
+.dropdown-menu {
+    background: #1E3D6B;
+    color: #F6F8F8;
+}
+
+.dropdown-menu li a{
+    background: #1E3D6B;
+    color: #F6F8F8;
+}
+.navbar-form {
+    border-top: none;
+    border-bottom: none;
+    overflow: none;
+}
+
+.navbar-form ul li{
+    overflow: hidden;
+}
+.form-control {
+    width: 90%;
+}
+.form-btn {
+    border-color: #F6F8F8;
+    float: right;
+    margin-top: -35px;
+}
+/* Carousel
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+    color: #F6F8F8;
+    text-shadow:
+        -1px -1px .5 #1E3D6B,
+        1px -1px .5 #1E3D6B,
+        -1px 1px .5 #1E3D6B,
+        1px 1px 0 #1E3D6B;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+.carousel-control .fa-chevron-left,
+.carousel-control .icon-prev {
+    left: 50%;
+    margin-left: -10px;
+}
+
+.carousel-control .fa-chevron-right,
+.carousel-control .icon-next {
+    right: 50%;
+    margin-right: -10px;
+}
+
+.carousel-control .fa-chevron-left,
+.carousel-control .fa-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.first-slide {
+    background: url("../img/schnitzel.jpg") no-repeat fixed 0% 0%;
+    -webkit-background-size: 600px auto;
+    background-size: 600px auto;
+}
+
+.second-slide {
+    background: url("../img/steak.jpg") no-repeat fixed 0% 0%;
+    -webkit-background-size: 600px auto;
+    background-size: 600px auto;
+}
+
+.third-slide {
+    background: url("../img/redbeans.jpg") no-repeat fixed 0% 0%;
+    -webkit-background-size: 600px auto;
+    background-size: 600px auto;
+}
+
+/* Single image Carousel
+-------------------------------------------------- */
+.carousel-social {
+    margin-top: 100px;
+
+    text-align: center;
+}
+
+.carousel-social  li {
+    display: inline;
+    list-style-type: none;
+}
+
+.carousel-social .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5995DD;
+    border-color: #CC4635;
+    padding-top: 18px;
+}
+
+.to_left {
+    -ms-transform: translate(-1000px,0px); /* IE 9 */
+    -webkit-transform: translate(-1000px,0px); /* Safari */
+    transform: translate(-1000px,0px);
+}
+
+.roll_back {
+    -ms-transform: translate(0px,0px); /* IE 9 */
+    -webkit-transform: translate(0px,0px); /* Safari */
+    transform: translate(0px,0px);
+    -webkit-transition: transform 3s ease-out 0s; /* Safari */
+    transition: transform 3s ease-out 0s;
+}
+
+.roll_back_effect {
+    -ms-transform: rotate(720deg); /* IE 9 */
+    -webkit-transform: rotate(720deg); /* Safari */
+    transform: rotate(720deg);
+    -webkit-transition: transform 3s ease-out 0s; /* Safari */
+    transition: transform 3s ease-out 0s;
+}
+
+.about-slide {
+    background: url("../img/pierogis.jpg") no-repeat fixed 0% 0%;
+    -webkit-background-size: 600px auto;
+    background-size: 600px auto;
+}
+
+.blog-slide {
+    background: url("../img/pinwheel.jpg") no-repeat fixed 0% 0%;
+    -webkit-background-size: 600px auto;
+    background-size: 600px auto;
+}
+
+/* Marketing messaging, featured work, latest work and news
+-------------------------------------------------- */
+
+.marketing .col-sm-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-sm-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#featured-work.btn a:hover {
+    background-color: #1E3D6B ;
+ }
+    /* JQuery hover CSS */
+
+.img-circle {
+    height: 250px;
+    width: 250px;
+    box-shadow: 5px 10px 15px #333;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.hover {
+    opacity: .4;
+    z-index: 10;
+    background-color: #F6F8F8;
+    box-shadow: none;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.feature-heading {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.slide-up {
+    margin-top: -140px;
+    margin-bottom: 170px;
+    z-index: 20;
+    font-weight: bold;
+    opacity: 1;
+    text-shadow: 1px 1px 0 #5995DD;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+/* Shopping banner
+-------------------------------------------------- */
+
+.shopping-banner {
+    margin-left: -20%;
+    margin-bottom: 75px;
+    width: 140%;
+    height: auto;
+    padding: 300px;
+    background: url("../img/sourdough.jpg") no-repeat fixed 0% 0% /cover;
+}
+
+.shopping-btn-container {
+    text-align: center;
+    margin-left: -135px;
+}
+
+.shopping-btn-container a:hover{
+    border-color: #CC4635;
+    background-color: #5995DD;
+    color: #1E3D6B;
+    text-shadow: 1px 1px #1E3D6B;
+}
+
+.shopping-btn {
+    padding: 18px 33px;
+    font-size: 24px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+/* Latest work and news
+-------------------------------------------------- */
+
+/*Footer
+-------------------------------------------------- */
+footer {
+    margin: 0 -0px -55px -50px;
+    background: #1E3D6B;
+    color: #F6F8F8;
+}
+
+footer a {
+    width: 40px;
+    height: 40px;
+    color: #F6F8F8;
+}
+
+footer a:hover {
+    text-decoration: none;
+    background-color: #1E3D6B;
+    color: #5995DD;
+}
+
+footer ul {
+    overflow: auto;
+    text-align: center;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer .btn {
+    background-color: #1E3D6B;
+    border-color: transparent;
+}
+.footer-widget-area {
+    padding-top: 55px;
+}
+
+/* Blog Page
+-------------------------------------------------- */
+.post_nav {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 400px;
+}
+.post_nav .fa-chevron-left {
+    margin-top: 40px;
+    -ms-transform: scale(3,3); /* IE 9 */
+    -webkit-transform: scale(3,3); /* Safari */
+    transform: scale(3,3);
+}
+
+.post_nav .fa-chevron-right {
+    margin-top: 40px;
+    -ms-transform: scale(3,3); /* IE 9 */
+    -webkit-transform: scale(3,3); /* Safari */
+    transform: scale(3,3);
+}
+.post_nav h4 {
+    margin-top: 15px;
+}
+.post_nav img {
+    border-radius: 50%;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 599px) {
+    /* Carousel
+    -------------------------------------------------- */
+    .first-slide {
+        background: url("../img/schnitzel-wide.jpg") no-repeat fixed 0% 0%;
+        -webkit-background-size: 992px auto;
+        background-size: 992px auto;
+    }
+
+    .second-slide {
+        background: url("../img/steak-wide.jpg") no-repeat fixed 0% 0%;
+        -webkit-background-size: 992px auto;
+        background-size: 992px auto;
+    }
+
+    .third-slide {
+        background: url("../img/redbeans-wide.jpg") no-repeat fixed 0% 0%;
+        -webkit-background-size: 992px auto;
+        background-size: 992px auto;
+    }
+    /* Single image Carousel
+    -------------------------------------------------- */
+    .about-slide {
+        background: url("../img/pierogis-wide.jpg") no-repeat fixed 0% 0%;
+        -webkit-background-size: 992px auto;
+        background-size: 992px auto;
+    }
+    .blog-slide {
+        background: url("../img/pinwheel-wide.jpg") no-repeat fixed 0% 0%;
+        -webkit-background-size: 992px auto;
+        background-size: 992px auto;
+    }
+}
+@media (min-width: 768px) {
+    /* Navbar
+    -------------------------------------------------- */
+    .navbar-form {
+        border: none;
+    }
+
+    .mynav {
+        float: right;
+        width: 90%;
+    }
+
+    .form-btn {
+        margin-top: -1px;
+    }
+    /* Carousel
+    -------------------------------------------------- */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .carousel-control .fa-chevron-left,
+    .carousel-control .icon-prev {
+        margin-left: -10px;
+    }
+
+    .carousel-control .fa-chevron-right,
+    .carousel-control .icon-next {
+        margin-right: -10px;
+    }
+
+    .carousel-control .fa-chevron-left,
+    .carousel-control .fa-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        font-size: 30px;
+        }
+
+    /* Shopping banner
+    -------------------------------------------------- */
+    .shopping-banner {
+        margin-left: -20%;
+        background-position: 0 50%;
+    }
+    /*Footer
+    -------------------------------------------------- */
+    footer {
+        margin: 0 -10% -55px -10%;
+    }
+
+    .footer-widget1 {
+        padding-left: 7%;
+    }
+
+    .footer-widget3 {
+        padding-right: 7%;
+    }
+    .fa-arrow-up {
+        padding-right: 75px;
+    }
+}
+
+@media (min-width: 860px) {
+    /*Footer
+    -------------------------------------------------- */
+    footer {
+        margin: 0 -18% -55px -18%;
+    }
+    .footer-widget1 {
+        padding-left: 10%;
+    }
+
+    .footer-widget3 {
+        padding-right: 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Carousel
+    -------------------------------------------------- */
+    .first-slide {
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+
+    }
+
+    .second-slide {
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+
+    }
+
+    .third-slide {
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+
+    }
+    /* Single image Carousel
+    -------------------------------------------------- */
+    .about-slide {
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+    }
+    .blog-slide {
+        -webkit-background-size: 1200px auto;
+        background-size: 1200px auto;
+        background-position: center -100px;
+    }
+    /* Shopping banner
+    -------------------------------------------------- */
+    .shopping-banner {
+        margin-right: 40%;
+    }
+}
+@media (min-width: 1000px) {
+    /*Footer
+    -------------------------------------------------- */
+    footer {
+        margin: 0 -13% -55px -13%;
+    }
+    .footer-widget1 {
+        padding-left: 7%;
+    }
+
+    .footer-widget3 {
+        padding-right: 7%;
+    }
+}
+
