@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="381cfdeb-1246-488f-812b-4ec81fc3265b" name="gregkerr.net" url="http://gregkerr.net">
+        <fileTransfer host="gregkerr.net" port="21" password="dfd9dfdadfd8dfc3dfc4dfcddf9bdf98df9b" username="student203@gregkerr.net">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
