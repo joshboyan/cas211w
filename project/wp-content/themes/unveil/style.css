@@ -157,19 +157,19 @@ a:hover {
 }
 
 .first-slide {
-    background: url("img/schnitzel.jpg") no-repeat fixed 0% 0%;
+    background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil/img/schnitzel.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
 
 .second-slide {
-    background: url("img/steak.jpg") no-repeat fixed 0% 0%;
+    background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil/img/steak.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
 
 .third-slide {
-    background: url("img/redbeans.jpg") no-repeat fixed 0% 0%;
+    background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil/img/redbeans.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
@@ -219,13 +219,13 @@ a:hover {
 }
 
 .about-slide {
-    background: url("../img/pierogis.jpg") no-repeat fixed 0% 0%;
+    background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/pierogis.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
 
 .blog-slide {
-    background: url("../img/pinwheel.jpg") no-repeat fixed 0% 0%;
+    background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/pinwheel.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
@@ -305,7 +305,7 @@ a:hover {
     width: 140%;
     height: auto;
     padding: 300px;
-    background: url("../img/sourdough.jpg") no-repeat fixed 0% 0% /cover;
+    background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/sourdough.jpg") no-repeat fixed 0% 0% /cover;
 }
 
 .shopping-btn-container {
@@ -421,31 +421,31 @@ footer .btn {
     /* Carousel
     -------------------------------------------------- */
     .first-slide {
-        background: url("../img/schnitzel-wide.jpg") no-repeat fixed 0% 0%;
+        background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/schnitzel-wide.jpg") no-repeat fixed 0% 0%;
         -webkit-background-size: 992px auto;
         background-size: 992px auto;
     }
 
     .second-slide {
-        background: url("../img/steak-wide.jpg") no-repeat fixed 0% 0%;
+        background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/steak-wide.jpg") no-repeat fixed 0% 0%;
         -webkit-background-size: 992px auto;
         background-size: 992px auto;
     }
 
     .third-slide {
-        background: url("../img/redbeans-wide.jpg") no-repeat fixed 0% 0%;
+        background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/redbeans-wide.jpg") no-repeat fixed 0% 0%;
         -webkit-background-size: 992px auto;
         background-size: 992px auto;
     }
     /* Single image Carousel
     -------------------------------------------------- */
     .about-slide {
-        background: url("../img/pierogis-wide.jpg") no-repeat fixed 0% 0%;
+        background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/pierogis-wide.jpg") no-repeat fixed 0% 0%;
         -webkit-background-size: 992px auto;
         background-size: 992px auto;
     }
     .blog-slide {
-        background: url("../img/pinwheel-wide.jpg") no-repeat fixed 0% 0%;
+        background: url("http://pccwebdesign.com/student203/project/wp-content/themes/unveil//img/pinwheel-wide.jpg") no-repeat fixed 0% 0%;
         -webkit-background-size: 992px auto;
         background-size: 992px auto;
     }

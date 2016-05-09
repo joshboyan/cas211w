@@ -64,7 +64,6 @@
         <div class="carousel-inner" role="listbox">
             <!-- First carousel slide -->
             <div class="item active blog-slide">
-                <!-- <img class="first-slide" src="img/bento.jpg" alt="First slide"> -->
                 <div class="container">
                     <ul class="carousel-social to_left">
                         <li><a class="btn social" href="#" target="_blank"><div class="sr-only">Facebook page</div><i class="fa fa-facebook fa-lg"></i></a></li>
