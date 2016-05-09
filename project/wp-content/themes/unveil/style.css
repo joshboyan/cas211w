@@ -1,5 +1,5 @@
 /*
-Theme Name: Unveil
+Theme Name: unveil
 Theme URI: only include this if your theme is 
 Author: Josh
 Author URI: http://wordpress.org/ or your own web address
@@ -87,7 +87,6 @@ a:hover {
 .navbar-form {
     border-top: none;
     border-bottom: none;
-    overflow: none;
 }
 
 .navbar-form ul li{
@@ -158,19 +157,19 @@ a:hover {
 }
 
 .first-slide {
-    background: url("../img/schnitzel.jpg") no-repeat fixed 0% 0%;
+    background: url("img/schnitzel.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
 
 .second-slide {
-    background: url("../img/steak.jpg") no-repeat fixed 0% 0%;
+    background: url("img/steak.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
 
 .third-slide {
-    background: url("../img/redbeans.jpg") no-repeat fixed 0% 0%;
+    background: url("img/redbeans.jpg") no-repeat fixed 0% 0%;
     -webkit-background-size: 600px auto;
     background-size: 600px auto;
 }
