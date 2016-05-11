@@ -1,5 +1,5 @@
 
-<?php get_header('front-page'); ?>
+<?php get_header(); ?>
 
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
