@@ -263,8 +263,8 @@ a:hover {
 }
 
 .hover {
-    opacity: .4;
     z-index: 10;
+    opacity: .4;
     background-color: #F6F8F8;
     box-shadow: none;
     -webkit-transition: all 1s;

@@ -28,6 +28,12 @@ add_action('after_setup_theme','unveil_setup');
 
 function unveil_scripts() {
 
+/*Remove WorPress jQuery*/
+
+wp_dequeue_script( 'jquery' );
+
+wp_deregister_script( 'jquery' );
+
 /* Stylesheets */
 
 wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
@@ -44,11 +50,11 @@ wp_enqueue_script( 'html5-shiv', 'https://oss.maxcdn.com/html5shiv/3.7.2/html5sh
 
 wp_enqueue_script( 'responsive-script', 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js' );
 
-wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.6', true );
+wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',"", '1.0', true );
 
-wp_enqueue_script( 'ie-viewport-bug', get_template_directory_uri() . '/js/ie10-viewport-bug-workaround.js',array('jquery'), '1.0', true );
-    
-//wp_enqueue_script( 'npm', get_template_directory_uri() . '/js/umd/carousel.js', array('jquery'), '1.0', true );
+wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0', true );
+
+wp_enqueue_script( 'ie-viewport-bug', get_template_directory_uri() . '/js/ie10-viewport-bug-workaround.js', array('jquery'), '1.0', true );
 
 wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0', true );
 }
