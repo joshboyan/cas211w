@@ -16,7 +16,7 @@
 
                         <h1><?php the_title(); ?></h1>
 
-                        <p class="blog-post-meta"><?php echo get_the_date(F, j, y); ?> by <a href="#"><?php the_author(); ?></a></p>
+                        <p class="blog-post-meta"><?php echo get_the_date('F, j, y'); ?> by <a href="#"><?php the_author(); ?></a></p>
 
                         <?php the_content(); ?>
 
@@ -37,16 +37,5 @@
 
         </section><!-- /#sidebar -->
     </div><!-- /.row -->
-
-
-
-
-    <!-- POSTS SECTION -->
-    <article>
-        <h2><?php the_title(); ?></h2>
-        <p><?php the_excerpt(); ?></p>
-    </article>
-
-
-
+    
 <?php get_footer(); ?>
