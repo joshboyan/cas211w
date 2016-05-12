@@ -16,7 +16,7 @@
 
                 <h1><?php the_title(); ?></h1>
 
-                <p class="blog-post-meta"><?php echo get_the_date(F, j, y); ?> by <a href="#"><?php the_author(); ?></a></p>
+                <p class="blog-post-meta"><?php echo get_the_date(F, j, y); ?> by <a href="<?php the_permalink(); ?>"><?php the_author(); ?></a></p>
 
                 <?php the_excerpt(); ?>
 
