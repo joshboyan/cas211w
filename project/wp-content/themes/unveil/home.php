@@ -18,8 +18,9 @@
 
                         <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
 
-                        <?php the_content(); ?>
+                        <?php the_excerpt(); ?>
 
+                        <p class="archiveButton"><a class="btn" href="<?php the_permalink(); ?>" role="button">Read More &raquo;</a></p>
                     </div><!-- /.blog-post -->
 
                 <?php endwhile; else : ?>

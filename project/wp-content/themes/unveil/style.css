@@ -415,6 +415,15 @@ footer .btn {
     height: auto;
 }
 
+/* Archive page
+-------------------------------------------------- */
+
+.archiveButton {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 55px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 599px) {

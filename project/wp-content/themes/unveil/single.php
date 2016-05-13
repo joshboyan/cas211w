@@ -14,9 +14,9 @@
 
                     <div class="blog-post">
 
-                        <h1><?php the_title(); ?></h1>
+                        <h1><a href="<?php the_permalink(); ?>"></a><?php the_title(); ?></a></h1>
 
-                        <p class="blog-post-meta"><?php echo get_the_date('F, j, y'); ?> by <a href="#"><?php the_author(); ?></a></p>
+                        <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
 
                         <?php the_content(); ?>
 

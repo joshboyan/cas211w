@@ -37,17 +37,17 @@
                         </div>
                     </form>
 
-                        <?php
-                        wp_nav_menu( array(
-                                'menu'              => 'primary',
-                                'theme_location'    => 'primary',
-                                'depth'             => 2,
-                                'container'         => false,
-                                'menu_class'        => 'nav navbar-nav navbar-right',
-                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                'walker'            => new wp_bootstrap_navwalker())
-                        );
-                        ?>
+                    <?php
+                    wp_nav_menu( array(
+                            'menu'              => 'primary',
+                            'theme_location'    => 'primary',
+                            'depth'             => 2,
+                            'container'         => false,
+                            'menu_class'        => 'nav navbar-nav navbar-right',
+                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                            'walker'            => new wp_bootstrap_navwalker())
+                    );
+                    ?>
 
                 </div><!-- /.navbar-collapse -->
 
