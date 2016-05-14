@@ -12,19 +12,20 @@
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                    <div class="blog-post">
+                    <article class="blog-post">
 
-                        <h1><a href="<?php the_permalink(); ?>"></a><?php the_title(); ?></a></h1>
+                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
                         <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
 
                         <?php the_content(); ?>
-
-                    </div><!-- /.blog-post -->
+                        
+                    </article><!-- /.blog-post -->
 
                 <?php endwhile; else : ?>
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                 <?php endif; ?>
+                </article>
 
             </div> <!-- /.col-sm-8 -->
         </section><!-- /#content_area -->

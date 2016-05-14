@@ -420,8 +420,6 @@ footer .btn {
 
 .archiveButton {
     text-align: center;
-    margin-top: -20px;
-    margin-bottom: 55px;
 }
 
 /* RESPONSIVE CSS
@@ -473,6 +471,8 @@ footer .btn {
 
     .form-btn {
         margin-top: -1px;
+        padding-top:10px;
+        padding-bottom: 10px;
     }
     /* Carousel
     -------------------------------------------------- */

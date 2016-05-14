@@ -60,3 +60,10 @@ wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/scripts.
 }
 
 add_action('wp_enqueue_scripts','unveil_scripts');
+
+/* Change archive truncate symbol to ... */
+
+function custom_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );

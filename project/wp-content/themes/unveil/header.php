@@ -33,7 +33,7 @@
                     <form class="navbar-form navbar-right" role="search" action="/search" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control " placeholder="Search" id="sitesearch" name="query">
-                            <button type="submit" class="btn form-btn glyphicon glyphicon-search"></button>
+                            <button type="submit" class="btn form-btn fa fa-search"></button>
                         </div>
                     </form>
 
