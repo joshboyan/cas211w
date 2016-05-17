@@ -23,6 +23,22 @@
                         <p>Posted in: <?php the_category(', ');?></p>
 
                         <p><?php the_tags();?></p>
+<!--pagination array -->
+                        <?php
+                        $defaults = array(
+                            'before'           => '<p class="pagination">',
+                            'after'            => '</p>',
+                            'link_before'      => '<span>',
+                            'link_after'       => '</span>',
+                            'next_or_number'   => 'number',
+                            'separator'        => ' &nbsp;&nbsp;',
+                            'nextpagelink'     => __( 'Next page' ),
+                            'previouspagelink' => __( 'Previous page' ),
+                            'pagelink'         => '%',
+                            'echo'             => 1
+                        );
+                        wp_link_pages( $defaults );
+                        ?>
 
                     </article><!-- /.blog-post -->
 
@@ -33,13 +49,14 @@
 
                 <div class="row">
 
-                    <ul>
-
-                        <li><?php previous_post_link('%link', '&larr; Previous post in category', TRUE); ?></li>
-
-                        <li><?php next_post_link('%link', 'Next post in category &rarr;', TRUE); ?></li>
-                    </ul>
-                    
+                    <nav>
+                        <div  class="post-navigation">
+                            <ul >
+                                <li><?php previous_post_link('%link', '<span class="btn"> &larr; Previous post in category </span>', TRUE); ?></li>
+                                <li><?php next_post_link( '%link', '<span class="btn">Next post in category &rarr; </span>', TRUE); ?></li>
+                            </ul>
+                        </div>
+                    </nav>
 
                 </div> <!-- /.row-->
             </div> <!-- /.col-sm-8 -->

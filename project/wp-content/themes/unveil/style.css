@@ -335,9 +335,48 @@ a:hover {
     opacity:0;
 }
 
-/* Latest work and news
+/* Post Navigation
 -------------------------------------------------- */
+.post-navigation ul {
+    margin-top: 55px;
+   text-align: center;
+}
 
+.post-navigation ul li {
+    display: inline;
+    color: #F6F8F8;
+}
+
+.post-navigation ul li a {
+    color: #F6F8F8;
+}
+
+.pagination {
+    margin-bottom: 50px;
+}
+
+.pagination a span {
+    background-color: #5995DD;
+    color: #F6F8F8;
+}
+
+.pagination a:hover span {
+    color: #000;
+}
+
+.pagination span {
+    background-color: #fff;
+    color: #000;
+    border: 2px #CC4635 solid;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+.btn {
+    border-color: #CC4635;
+    background-color: #5995DD;
+    color: #F6F8F8;
+    text-shadow: #1E3D6B;
+}
 /*Footer
 -------------------------------------------------- */
 footer {

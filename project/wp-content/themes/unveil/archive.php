@@ -33,42 +33,14 @@
             <?php endif; ?>
             </article>
 
-            <div class="row">
-                <a href="#">
-                    <div class="col-md-6">
-                        <div class="row post_nav">
-                            <div class="col-xs-2">
-                                <i class="fa fa-chevron-left"></i>
-                            </div><!-- /.col-xs-2-->
-                            <div class="col-xs-6">
-                                <h4>Previous Post</h4>
-                                <h4>Latest Work</h4>
-                            </div><!-- /.col-xs-6-->
-                            <div class="col-xs-4">
-                                <img src="img/bento-thumb.jpg" alt="previous post featured image">
-                            </div><!-- /.col-xs-4-->
-                        </div><!-- /.row-->
-                    </div><!-- /.col-md-6 -->
-                </a>
-
-                <a href="#">
-                    <div class="col-md-6">
-                        <div class="row post_nav">
-                            <div class="col-xs-4">
-                                <img src="img/appetizers-thumb.jpg" alt="previous post featured image">
-                            </div><!-- /.col-xs-4-->
-                            <div class="col-xs-6">
-                                <h4>Next Post</h4>
-                                <h4>Show What You Want</h4>
-                            </div><!-- /.col-xs-6-->
-                            <div class="col-xs-2">
-                                <i class="fa fa-chevron-right"></i>
-                            </div><!-- /.col-xs-2-->
-
-                        </div><!-- /.row-->
-                    </div><!-- /.col-md-6 -->
-                </a>
-            </div> <!-- /.row-->
+            <nav>
+                <div  class="post-navigation">
+                    <ul >
+                        <li><?php next_posts_link('<span class="btn">&larr; Older Posts</span>'); ?></li
+                        <li><?php previous_posts_link('<span class="btn">Newer Posts &rarr;</span>'); ?></li>
+                    </ul>
+                </div>
+            </nav>
         </div> <!-- /.col-sm-8 -->
     </section><!-- /#content_area -->
     <!-- Sidebar Area

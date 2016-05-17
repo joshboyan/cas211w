@@ -32,8 +32,14 @@
                     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                 <?php endif; ?>
                     </article><!-- /.blog-post -->
-
-
+                <nav>
+                    <div  class="post-navigation">
+                        <ul >
+                            <li><?php next_posts_link('<span class="btn">&larr; Older Posts</span>'); ?></li
+                            <li><?php previous_posts_link('<span class="btn">Newer Posts &rarr;</span>'); ?></li>
+                        </ul>
+                    </div>
+                </nav>
             </div> <!-- /.col-sm-8 -->
         </section><!-- /#content_area -->
         <!-- Sidebar Area
