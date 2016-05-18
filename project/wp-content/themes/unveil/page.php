@@ -1,5 +1,11 @@
 
-<?php get_header(); ?>
+<?php
+
+/**
+ * Template Name: Content/Sidebar
+ */
+
+get_header(); ?>
 
 <!-- Wrap the rest of the page in another container to center all the content. -->
 

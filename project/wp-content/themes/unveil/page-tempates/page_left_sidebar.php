@@ -1,8 +1,7 @@
-
 <?php
 
 /**
- * Template Name: Full Width Page
+ * Template Name: Sidebar/Content
  */
 
 get_header(); ?>
@@ -11,10 +10,18 @@ get_header(); ?>
 
 <div class="container marketing">
     <div class="row">
+        <!-- Sidebar Area
+        ================================================== -->
+        <section id="sidebar">
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+
+                <?php get_sidebar(); ?>
+
+        </section><!-- /#sidebar -->
         <!-- Content Area
         ================================================== -->
         <section id="content_area">
-            <div class="col-xs-12">
+            <div class="col-sm-8">
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -54,4 +61,4 @@ get_header(); ?>
         </section><!-- /#content_area -->
     </div><!-- /.row -->
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
