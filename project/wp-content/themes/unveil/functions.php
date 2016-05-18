@@ -68,3 +68,20 @@ function custom_excerpt_more( $more ) {
     return '...';
 }
 add_filter( 'excerpt_more', 'custom_excerpt_more' );
+
+// Register Custom Post Type - Products
+
+add_action( 'init', 'create_post_type' );
+add_post_type_support( 'unveil_product', 'thumbnail' );
+function create_post_type() {
+    register_post_type( 'unveil_product',
+        array(
+            'labels' => array(
+                'name' => __( 'Products' ),
+                'singular_name' => __( 'Product' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+}
