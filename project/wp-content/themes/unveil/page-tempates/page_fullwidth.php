@@ -8,7 +8,7 @@
         <!-- Content Area
         ================================================== -->
         <section id="content_area">
-            <div class="col-sm-8">
+            <div class="col-xs-12">
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -20,10 +20,7 @@
 
                         <?php the_content(); ?>
 
-                        <p>Posted in: <?php the_category(', ');?></p>
-
-                        <p><?php the_tags();?></p>
-<!--pagination array -->
+                        <!--pagination array -->
                         <?php
                         $defaults = array(
                             'before'           => '<p class="pagination">',
@@ -47,34 +44,8 @@
                 <?php endif; ?>
                 </article>
 
-                <div class="row">
-
-                    <nav>
-                        <div  class="post-navigation">
-                            <ul >
-                                <li><?php previous_post_link('%link', '<span class="btn"> &larr; Previous post in category </span>', TRUE); ?></li> &nbsp;
-                                <li><?php next_post_link( '%link', '<span class="btn">Next post in category &rarr; </span>', TRUE); ?></li>
-                            </ul>
-                        </div>
-                    </nav>
-
-                </div> <!-- /.row-->
             </div> <!-- /.col-sm-8 -->
         </section><!-- /#content_area -->
-        <!-- Sidebar Area
-        ================================================== -->
-        <section id="sidebar">
-            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-
-                <?php get_sidebar(); ?>
-
-        </section><!-- /#sidebar -->
     </div><!-- /.row -->
 
-    
-
 <?php get_footer(); ?>
-
-
-
-

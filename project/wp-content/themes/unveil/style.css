@@ -371,11 +371,11 @@ a:hover {
     padding: 3px 8px;
     border-radius: 5px;
 }
-.btn {
-    border-color: #CC4635;
-    background-color: #5995DD;
-    color: #F6F8F8;
-    text-shadow: #1E3D6B;
+
+article hr{
+    width: 100%;
+    margin: 55px 0;
+    border-bottom: 3px #5995DD solid;
 }
 /*Footer
 -------------------------------------------------- */

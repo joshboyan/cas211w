@@ -12,36 +12,49 @@
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                    <article class="blog-post">
+                <article class="blog-post">
 
-                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-                        <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
+                    <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
+                    <?php if ( has_post_thumbnail() ) {
+                        echo '<div class="col-sm-6">' . '<a href=' . get_permalink() . '>' . get_the_post_thumbnail() . '</a></div>';
+                    }
+                    ?>
+                    <div <?php if ( has_post_thumbnail() ) {
+                        echo 'class="col-sm-6">';
+                    }
+                    else {
+                        echo 'class="col-xs-12">';
+                    }
+                    ?>
+                    <?php the_excerpt(); ?>
 
-                        <?php the_excerpt(); ?>
+                    <p class="archiveButton"><a class="btn" href="<?php the_permalink(); ?>" role="button">Read More &raquo;</a></p>
 
-                        <p class="archiveButton"><a class="btn" href="<?php the_permalink(); ?>" role="button">Read More &raquo;</a></p>
+                    <p>Posted in: <?php the_category(', ');?></p>
 
-                        <p>Posted in: <?php the_category(', ');?></p>
+                    <p><?php the_tags();?></p>
+            </div>
 
-                        <p><?php the_tags();?></p>
+            <hr>
+            </article><!-- /.blog-post -->
+
+            <?php endwhile; else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php endif; ?>
 
 
-
-                <?php endwhile; else : ?>
-                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                <?php endif; ?>
-                    </article><!-- /.blog-post -->
-                <nav>
-                    <div  class="post-navigation">
-                        <ul >
-                            <li><?php next_posts_link('<span class="btn">&larr; Older Posts</span>'); ?></li
-                            <li><?php previous_posts_link('<span class="btn">Newer Posts &rarr;</span>'); ?></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div> <!-- /.col-sm-8 -->
-        </section><!-- /#content_area -->
+            <nav>
+                <div  class="post-navigation">
+                    <ul >
+                        <li><?php next_posts_link('<span class="btn">&larr; Older Posts</span>'); ?></li> &nbsp;
+                        <li><?php previous_posts_link('<span class="btn">Newer Posts &rarr;</span>'); ?></li>
+                    </ul>
+                </div>
+            </nav>
+    </div> <!-- /.col-sm-8 -->
+    </section><!-- /#content_area -->
         <!-- Sidebar Area
         ================================================== -->
         <section id="sidebar">

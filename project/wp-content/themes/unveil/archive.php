@@ -17,7 +17,17 @@
                 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
                 <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
-
+               <?php if ( has_post_thumbnail() ) {
+                   echo '<div class="col-sm-6">' . '<a href=' . get_permalink() . '>' . get_the_post_thumbnail() . '</a></div>';
+                    }
+               ?>
+                <div <?php if ( has_post_thumbnail() ) {
+                    echo 'class="col-sm-6">';
+                }
+                else {
+                    echo 'class="col-xs-12">';
+                    }
+                ?>
                 <?php the_excerpt(); ?>
 
                 <p class="archiveButton"><a class="btn" href="<?php the_permalink(); ?>" role="button">Read More &raquo;</a></p>
@@ -25,18 +35,20 @@
                 <p>Posted in: <?php the_category(', ');?></p>
 
                 <p><?php the_tags();?></p>
-                
-            </article><!-- /.blog-post -->
+                </div>
 
+
+            </article><!-- /.blog-post -->
+        
             <?php endwhile; else : ?>
                 <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
             <?php endif; ?>
-            </article>
+
 
             <nav>
                 <div  class="post-navigation">
                     <ul >
-                        <li><?php next_posts_link('<span class="btn">&larr; Older Posts</span>'); ?></li
+                        <li><?php next_posts_link('<span class="btn">&larr; Older Posts</span>'); ?></li> &nbsp;
                         <li><?php previous_posts_link('<span class="btn">Newer Posts &rarr;</span>'); ?></li>
                     </ul>
                 </div>

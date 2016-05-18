@@ -47,23 +47,27 @@
         <h2>Latest Work and News</h2>
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-sm-4" id="feature4">
-                <a href="#"><img class="img-circle" src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/bento.jpg" alt="Generic placeholder image"></a>
-                <h3 class="feature-heading">Latest Work</h3>
-                <p>Did you see that shop button gracefully appear? You can bet your users will. They probably won't make it past that but if they do they are going to get blown away by your latest poems about your vegan bicycle or whatever it is you do. This will be the first item in this section users see...</p>
-                <p><a class="btn" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-sm-4 -->
-            <div class="col-sm-4" id="feature5">
-                <a href="#"><img class="img-circle" src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/pinwheel-small.jpg" alt="Generic placeholder image"></a>
-                <h3 class="feature-heading">Curating This Section</h3>
-                <p>By default this section will show your last three posts. This section gets all of its images and copy from your latest post. Pretty easy huh? People are gonna think you are working so hard to maintain this masterpiece...</p>
-                <p><a class="btn" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-sm-4 -->
-            <div class="col-sm-4"  id="feature6">
-                <a href="#"><img class="img-circle" src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/appetizers.jpg" alt="Generic placeholder image"></a>
-                <h3 class="feature-heading">Show What You Want</h3>
-                <p>If you have a seasonal promotion or enter into your blue phase this section is easy to curate using the category tags you are diligently assigning to all your post. Please tell me your assigning categories! We are all busy and don't have the time for my long winded speech about SEO... </p>
-                <p><a class="btn" href="#" role="button">View details &raquo;</a></p>
+            <?php
+            $recent_posts = new WP_Query();
+            $recent_posts->query('orderby=date&posts_per_page=3&category_name=news');
+            $feature_number = 4;
+            ?>
+            <?php if ( $recent_posts->have_posts() ) : ?>
+                <?php while ($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
+                    <div class="col-sm-4" id="<?php echo 'feature' . $feature_number ?>">
+                        <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail', array('class' => "img-circle")); ?></a>
+                        <h3 class="feature-heading"><?php the_title(); ?></a></h3>
+                        <?php the_excerpt(); ?>
+                        <p><a class="btn" href="<?php the_permalink() ?>" role="button">View details &raquo;</a></p>
+                    </div><!-- /.cols -->
+                    <?php $feature_number = $feature_number + 1 ?>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <div class="col-xs-12 news-section"><p><?php _e( 'No posts have been created yet in the Services category.<br>
+Add that category and create posts.<br>Be sure to give each post a featured image.' ); ?></p></div><!-- /.col -->
+            <?php endif; ?>
+
             </div><!-- /.col-sm-4 -->
         </div><!-- /.row -->
     </section><!-- /latest work and news -->
