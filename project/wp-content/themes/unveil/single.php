@@ -14,9 +14,10 @@
 
                     <article class="blog-post">
 
-                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                        <h1><?php the_title(); ?></h1>
 
                         <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
+                        <?php get_template_part( 'content', 'comments' ); ?>
 
                         <?php the_content(); ?>
 
@@ -59,6 +60,15 @@
                     </nav>
 
                 </div> <!-- /.row-->
+
+                <?php
+                if ( comments_open() ) {
+                    echo '<div class="well">';
+                    comments_template();
+                    echo '</div>';
+                }
+                ?>
+
             </div> <!-- /.col-sm-8 -->
         </section><!-- /#content_area -->
         <!-- Sidebar Area
