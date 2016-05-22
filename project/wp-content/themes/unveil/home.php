@@ -61,6 +61,7 @@
 
                 <?php get_sidebar(); ?>
 
+            </div><!-- /.col-sm-3 -->
         </section><!-- /#sidebar -->
     </div><!-- /.row -->
 

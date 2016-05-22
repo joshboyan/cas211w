@@ -374,7 +374,8 @@ a:hover {
 
 article hr{
     width: 100%;
-    margin: 55px 0;
+    padding: 10px 0;
+    border-top-width: 0;
     border-bottom: 3px #5995DD solid;
 }
 /*Footer
@@ -459,6 +460,9 @@ footer .btn {
 
 .archiveButton {
     text-align: center;
+}
+.sidebar-module {
+    width: 100%;
 }
 
 /* RESPONSIVE CSS

@@ -86,16 +86,12 @@
 </header>
 <div class="row">
     <?php
-    if(is_category( 'lunch' )) {
-        single_tag_title('<h1>What \'s Cooking This Afternoon</h1>');
+    if(is_category('lunch')) {
+        echo '<h1>What \'s Cooking This Afternoon</h1>';
+    }
+    else {
+        echo '<h1>What \'s Cooking</h1> ';
+    }
 
-    }
-    elseif(is_archive()) {
-        single_term_title('<h1>What \'s Cooking</h1> ');
-        if( is_month() ) {
-            echo 'Posts from ';
-            single_month_title(' ');
-        }
-    }
     ?>
 </div>
