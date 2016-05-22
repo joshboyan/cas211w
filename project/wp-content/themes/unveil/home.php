@@ -17,10 +17,9 @@
                     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
                     <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
-                    <?php if ( has_post_thumbnail() ) {
-                        echo '<div class="col-sm-6">' . '<a href=' . get_permalink() . '>' . get_the_post_thumbnail() . '</a></div>';
-                    }
-                    ?>
+                    <?php if ( has_post_thumbnail() ) ; ?>
+                    <?php echo '<div class="col-sm-6">' . '<a href=' . get_permalink() . '>' ; ?> <?php the_post_thumbnail('thumbnail', array('class' => "img-circle")); ?> <?php echo '</a></div>' ; ?>
+
                     <div <?php if ( has_post_thumbnail() ) {
                         echo 'class="col-sm-6">';
                     }

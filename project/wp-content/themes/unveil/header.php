@@ -86,7 +86,7 @@
 </header>
 <div class="row">
     <?php
-    if(is_category( 'Lunch' )) {
+    if(is_category( 'lunch' )) {
         single_tag_title('<h1>What \'s Cooking This Afternoon</h1>');
 
     }

@@ -110,7 +110,8 @@ function bootstrap3_comment_form_fields( $fields ) {
     return $fields;
 }
 
-// Modifies Textarea Fields
+// Modifies Text Area Fields in Comments Form
+
 add_filter( 'comment_form_defaults', 'bootstrap3_comment_form' );
 function bootstrap3_comment_form( $args ) {
     $args['comment_field'] = '<div class="form-group comment-form-comment">
@@ -120,4 +121,79 @@ function bootstrap3_comment_form( $args ) {
     $args['class_submit'] = 'btn btn-default'; // since WP 4.1
 
     return $args;
+}
+
+//Register Sidebars
+
+function unveil_sidebars() {
+    $args = array(
+        'id' => 'main-sidebar',
+        'name' => __('Main Right Sidebar', 'unveil'),
+        'description' => ('This is the main sidebar on the right for posts and pages. Used for archive.php, home.php, page.php, and single.php'),
+        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    );
+    register_sidebar( $args );
+
+    $args = array(
+        'id' => 'footer-sidebar1',
+        'name' => __('Footer Sidebar1', 'unveil'),
+        'description' => ('This is the footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
+        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    );
+    register_sidebar( $args );
+
+    $args = array(
+        'id' => 'left-sidebar',
+        'name' => __('Left Sidebar', 'unveil'),
+        'description' => ('This is an alternate sidebar for posts and pages. Used for archive.php, home.php, page.php, and single.php'),
+        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    );
+    register_sidebar( $args );
+
+    $args = array(
+        'id' => 'half-sidebar-left',
+        'name' => __('Half Page Left Sidebar', 'unveil'),
+        'description' => ('This is used on the contact form page template.'),
+        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    );
+    register_sidebar( $args );
+
+    $args = array(
+        'id' => 'half-sidebar-right',
+        'name' => __('Half Page Right Sidebar', 'unveil'),
+        'description' => ('TThis is used on the contact form page template.'),
+        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    );
+    register_sidebar( $args );
+}
+
+add_action( 'widgets_init', 'unveil_sidebars');
+
+
+// Enable PHP in widgets
+
+add_filter('widget_text','execute_php',100);
+function execute_php($html){
+    if(strpos($html,"<"."?php")!==false){
+        ob_start();
+        eval("?".">".$html);
+        $html=ob_get_contents();
+        ob_end_clean();
+    }
+    return $html;
 }
