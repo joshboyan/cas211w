@@ -130,19 +130,41 @@ function unveil_sidebars() {
         'id' => 'main-sidebar',
         'name' => __('Main Right Sidebar', 'unveil'),
         'description' => ('This is the main sidebar on the right for posts and pages. Used for archive.php, home.php, page.php, and single.php'),
-        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
-        'after_widget' => '</div>',
+        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</li>',
         'before_title' => '<h4>',
-        'after_title' => '</h4>',
+        'after_title' => '</h4>'
     );
     register_sidebar( $args );
 
     $args = array(
         'id' => 'footer-sidebar1',
         'name' => __('Footer Sidebar1', 'unveil'),
-        'description' => ('This is the footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
-        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
-        'after_widget' => '</div>',
+        'description' => ('This is the left footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
+        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    );
+    register_sidebar( $args );
+
+    $args = array(
+        'id' => 'footer-sidebar2',
+        'name' => __('Footer Sidebar2', 'unveil'),
+        'description' => ('This is the center footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
+        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    );
+    register_sidebar( $args );
+
+    $args = array(
+        'id' => 'footer-sidebar3',
+        'name' => __('Footer Sidebar3', 'unveil'),
+        'description' => ('This is the right footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
+        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</li>',
         'before_title' => '<h4>',
         'after_title' => '</h4>'
     );
@@ -152,8 +174,8 @@ function unveil_sidebars() {
         'id' => 'left-sidebar',
         'name' => __('Left Sidebar', 'unveil'),
         'description' => ('This is an alternate sidebar for posts and pages. Used for archive.php, home.php, page.php, and single.php'),
-        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
-        'after_widget' => '</div>',
+        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</li>',
         'before_title' => '<h4>',
         'after_title' => '</h4>'
     );
@@ -163,8 +185,8 @@ function unveil_sidebars() {
         'id' => 'half-sidebar-left',
         'name' => __('Half Page Left Sidebar', 'unveil'),
         'description' => ('This is used on the contact form page template.'),
-        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
-        'after_widget' => '</div>',
+        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</li>',
         'before_title' => '<h4>',
         'after_title' => '</h4>'
     );
@@ -174,8 +196,8 @@ function unveil_sidebars() {
         'id' => 'half-sidebar-right',
         'name' => __('Half Page Right Sidebar', 'unveil'),
         'description' => ('TThis is used on the contact form page template.'),
-        'before-widget' => '<div id="%1$s" class="sidebar-module %2$s">',
-        'after_widget' => '</div>',
+        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
+        'after_widget' => '</li>',
         'before_title' => '<h4>',
         'after_title' => '</h4>'
     );
