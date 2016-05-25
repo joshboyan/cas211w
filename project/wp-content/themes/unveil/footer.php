@@ -3,19 +3,14 @@
         <div class="container-fluid">
             <div class="row footer-widget-area">
                 <div class="col-sm-4 footer-widget1">
-                    <h4>This is footer widget area 1.</h4>
-                    <p>Your local business address needs to be on every page for local SEO and                          accessibility.</p>
-                    <div itemscope itemtype="http://schema.org/LocalBusiness">
-                        <p itemprop="name">Unveil Themes</p>
-                        <address itemprop="address">8675 Jenny Street<br>Portland, OR 97201</address>
-                        <p itemprop="telephone"><a href="tel:+15038675309"><i class="fa fa-phone-square"></i> &nbsp; 503-867-5309</a></p>
-                        <p><a href=#><i class="fa fa-envelope-o "></i> &nbsp; Contact Us!</a></p>
-                    </div>
+
+                    <?php get_sidebar('footer1'); ?>
+
                 </div><!-- /.col-sm-4 -->
                 <div class="col-sm-4 footer-widget2">
-                    <h4>This is footer widget area 2.</h4>
-                    <p>Perhaps for a map?</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.3695911229747!2d-122.72354264845332!3d45.54289017899937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549509c5d1dee599%3A0x4723c3deb944cbe2!2sCasa+Diablo!5e0!3m2!1sen!2sus!4v1461874734884" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <?php get_sidebar('footer2'); ?>
+                    
                 </div><!-- /.col-sm-4 -->
                 <div class="col-sm-4 footer-widget3">
                     <h4>This is footer widget area 3.</h4>

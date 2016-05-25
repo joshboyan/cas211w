@@ -381,7 +381,8 @@ article hr{
 /*Footer
 -------------------------------------------------- */
 footer {
-    margin: 0 -0px -55px -50px;
+    width: 100%;
+    margin: 0 0 -55px 0;
     background: #1E3D6B;
     color: #F6F8F8;
 }
@@ -554,7 +555,7 @@ footer .btn {
     /*Footer
     -------------------------------------------------- */
     footer {
-        margin: 0 -10% -55px -10%;
+        margin: 0 -10% -55px 0;
     }
 
     .footer-widget1 {
@@ -573,7 +574,7 @@ footer .btn {
     /*Footer
     -------------------------------------------------- */
     footer {
-        margin: 0 -18% -55px -18%;
+        margin: 0 -18% -55px 0;
     }
     .footer-widget1 {
         padding-left: 10%;
@@ -629,7 +630,7 @@ footer .btn {
     /*Footer
     -------------------------------------------------- */
     footer {
-        margin: 0 -13% -55px -13%;
+        margin: 0 -13% -55px 0;
     }
     .footer-widget1 {
         padding-left: 7%;

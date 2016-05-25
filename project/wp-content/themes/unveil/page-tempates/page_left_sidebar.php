@@ -15,7 +15,7 @@ get_header(); ?>
         <section id="sidebar">
             <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 
-                <?php get_sidebar(); ?>
+                <?php get_sidebar('left'); ?>
 
         </section><!-- /#sidebar -->
         <!-- Content Area

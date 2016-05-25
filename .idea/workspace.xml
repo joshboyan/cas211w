@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7792f49b-61ff-40a8-a75c-3e21baed6631" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-left.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/style.css" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/style.css" />
     </list>
     <ignored path="cas211w.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +44,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="168" column="32" selection-start-line="168" selection-start-column="32" selection-end-line="168" selection-end-column="32" />
+            <state relative-caret-position="372">
+              <caret line="184" column="34" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="34" />
               <folding>
                 <marker date="1464034801074" expanded="true" signature="4442:4708" placeholder="..." />
                 <marker date="1464034801074" expanded="true" signature="5167:5178" placeholder="..." />
@@ -46,31 +54,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/home.php">
+      <file leaf-file-name="sidebar-half2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar-half1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page_left_sidebar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -109,7 +127,6 @@
         <option value="$PROJECT_DIR$/project/wp-content/index.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/styles.css" />
         <option value="$PROJECT_DIR$/project/wp-config.php" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/css/style.css" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/wp_bootstrap_navwalker.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/header-front-page.php" />
@@ -121,7 +138,6 @@
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/front-page.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_fullwidth.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page.php" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_with_posts.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/js/scripts.js" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/archive-unveil_product.php" />
@@ -131,11 +147,21 @@
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/category-news.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/content-comments.php" />
         <option value="$PROJECT_DIR$/project/wp-content/mu-plugins/business_address_widget.php" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/style.css" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/header.php" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/home.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer-sidebar2.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer-sidebar3.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/style.css" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer1.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer2.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer3.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-left.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half2.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half1.php" />
       </list>
     </option>
   </component>
@@ -149,9 +175,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="2912" />
+    <option name="x" value="2784" />
     <option name="y" value="24" />
-    <option name="width" value="920" />
+    <option name="width" value="1048" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -249,32 +275,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cas211w" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cas211w" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unveil" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,19 +395,19 @@
       <workItem from="1463248360981" duration="68000" />
       <workItem from="1463496537326" duration="33551000" />
       <workItem from="1463861929022" duration="15595000" />
-      <workItem from="1464032758306" duration="2518000" />
+      <workItem from="1464032758306" duration="5719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232368000" />
+    <option name="totallyTimeSpent" value="235569000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2912" y="24" width="920" height="1056" extended-state="4" />
+    <frame x="2784" y="24" width="1048" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3405467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33867276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29540917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853025" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -445,36 +445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/integration/blog-template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integration/nifty.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4612">
-          <caret line="366" column="20" selection-start-line="366" selection-start-column="20" selection-end-line="366" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integration/twentyfourteen-child/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integration/twentyfourteen-child/comments.php" />
-    <entry file="file://$PROJECT_DIR$/integration/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/img/12963394_1211534752191910_3228684637168250886_n.jpg" />
     <entry file="file://$PROJECT_DIR$/project/css/ie10-viewport-bug-workaround.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -627,27 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_with_posts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="49" column="35" selection-start-line="11" selection-start-column="4" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -669,24 +618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="57" column="119" selection-start-line="57" selection-start-column="84" selection-end-line="57" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/archive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -718,14 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6750">
-          <caret line="375" column="16" selection-start-line="375" selection-start-column="16" selection-end-line="375" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="831">
@@ -736,26 +663,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar.php">
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="-359">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="453">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="632" column="30" selection-start-line="632" selection-start-column="30" selection-end-line="632" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="78" column="32" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="168" column="32" selection-start-line="168" selection-start-column="32" selection-end-line="168" selection-end-column="32" />
+        <state relative-caret-position="372">
+          <caret line="184" column="34" selection-start-line="184" selection-start-column="17" selection-end-line="184" selection-end-column="34" />
           <folding>
             <marker date="1464034801074" expanded="true" signature="4442:4708" placeholder="..." />
             <marker date="1464034801074" expanded="true" signature="5167:5178" placeholder="..." />
@@ -763,10 +754,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php">
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-half1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_with_posts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding />
         </state>
       </provider>
