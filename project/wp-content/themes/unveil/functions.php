@@ -219,3 +219,11 @@ function execute_php($html){
     }
     return $html;
 }
+
+function custom_excerpt_length( $length ) {
+    if (is_search()) {
+        return 25;
+    }
+    else return 45;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

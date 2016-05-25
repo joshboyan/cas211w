@@ -20,6 +20,7 @@
                     <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail', array('class' => "img-circle")); ?></a> <br>
                     <h3 class="feature-heading"><?php the_title(); ?></h3>
                  </div>
+                        
                  <?php $feature_number = $feature_number + 1 ?>
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>

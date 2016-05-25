@@ -1,35 +1,52 @@
 <?php
 
 /**
- * Template Name: Sidebar/Content
+ * Template Name: Two Half Page Sidebars
  */
 
 get_header(); ?>
 
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<div class="container marketing">
-    <div class="row">
-        <!-- Sidebar Area
-        ================================================== -->
-        <section id="sidebar">
-            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-
-                <?php get_sidebar('left'); ?>
-
-        </section><!-- /#sidebar -->
         <!-- Content Area
         ================================================== -->
         <div class="container marketing">
             <div class="row">
 
-                <h2 class="blog-post-title">Page &#8211; Two Sidebars</h2>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            </div><!-- /.row 1 -->
-            <div class="row">
-                <p>This is a page layout that has two sidebars (widget areas) below a content area. It&#8217;s ideal for a contact form in the content area and contact related information in the widgets above it.</p>
-                <p>You can choose it from Page Attributes when you make a new Page.</p>
-                <p>Here&#8217;s how a contact form might look in this section:</p>
+                    <article class="blog-post">
+
+                        <h1><?php the_title(); ?></h1>
+
+                        <p class="blog-post-meta"><?php echo get_the_date('F j, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
+
+                        <?php the_content(); ?>
+
+                        <!--pagination array -->
+                        <?php
+                        $defaults = array(
+                            'before'           => '<p class="pagination">',
+                            'after'            => '</p>',
+                            'link_before'      => '<span>',
+                            'link_after'       => '</span>',
+                            'next_or_number'   => 'number',
+                            'separator'        => ' &nbsp;&nbsp;',
+                            'nextpagelink'     => __( 'Next page' ),
+                            'previouspagelink' => __( 'Previous page' ),
+                            'pagelink'         => '%',
+                            'echo'             => 1
+                        );
+                        wp_link_pages( $defaults );
+                        ?>
+
+                    </article><!-- /.blog-post -->
+
+                <?php endwhile; else : ?>
+                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                <?php endif; ?>
+                </article>
+
                 <div role="form" class="wpcf7" id="wpcf7-f156-p77-o1" lang="en-US" dir="ltr">
                     <div class="screen-reader-response"></div>
                     <form action="/project/page-two-sidebars/#wpcf7-f156-p77-o1" method="post" class="wpcf7-form" novalidate="novalidate">
