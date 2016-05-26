@@ -31,13 +31,14 @@
 
                     <p class="archiveButton"><a class="btn" href="<?php the_permalink(); ?>" role="button">Read More &raquo;</a></p>
 
-                    <?php if ( has_category()) { ?>
-                        <p>Posted in: <?php the_category(', ') ?> </p>
-                    <?php }  ?>
+                    <?php if ( has_category()) : ?>
+                        <p>Posted in: <?php the_category(", ") ?> </p>
+                    <?php endif ?>
 
-                    <?php if ( has_tags()) { ?>
-                        <p>Tags: <?php the_tags(', ') ?> </p>
-                    <?php }  ?>
+                    <?php if ( has_tag()) : ?>
+                        <p>Tags: <?php the_tags() ?> </p>
+                    <?php endif ?>
+
 
             </div>
 

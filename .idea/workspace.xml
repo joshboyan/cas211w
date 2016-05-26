@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7792f49b-61ff-40a8-a75c-3e21baed6631" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/archive-unveil_product.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/archive-unveil_product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_fullwidth.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_fullwidth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_with_posts.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_with_posts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/two_half_page_sidebars.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/two_half_page_sidebars.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/search.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/search.php" />
     </list>
     <ignored path="cas211w.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,15 +45,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+            <state relative-caret-position="328">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
               <folding>
-                <marker date="1464201886106" expanded="true" signature="2775:2844" placeholder="..." />
-                <marker date="1464201886106" expanded="true" signature="2873:2986" placeholder="..." />
-                <marker date="1464201886106" expanded="true" signature="2933:2976" placeholder="..." />
+                <marker date="1464283030910" expanded="true" signature="2334:2458" placeholder="..." />
+                <marker date="1464283030910" expanded="true" signature="2381:2458" placeholder="..." />
+                <marker date="1464283030910" expanded="true" signature="2406:2458" placeholder="..." />
+                <marker date="1464283030910" expanded="true" signature="2777:2846" placeholder="..." />
+                <marker date="1464283030910" expanded="true" signature="2875:2988" placeholder="..." />
+                <marker date="1464283030910" expanded="true" signature="2935:2978" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -75,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="archive-unveil_product.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="archive-unveil_product.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/archive-unveil_product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
@@ -151,8 +148,8 @@
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_fullwidth.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/search.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/archive-unveil_product.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/search.php" />
       </list>
     </option>
   </component>
@@ -390,12 +387,12 @@
       <workItem from="1463248360981" duration="68000" />
       <workItem from="1463496537326" duration="33551000" />
       <workItem from="1463861929022" duration="15595000" />
-      <workItem from="1464032758306" duration="9876000" />
+      <workItem from="1464032758306" duration="13954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239726000" />
+    <option name="totallyTimeSpent" value="243804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2784" y="24" width="1048" height="1056" extended-state="4" />
@@ -744,7 +741,7 @@
         <state relative-caret-position="504">
           <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
           <folding>
-            <element signature="e#7#48#0#PHP" expanded="true" />
+            <element signature="e#7#48#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,7 +751,7 @@
         <state relative-caret-position="108">
           <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           <folding>
-            <element signature="e#7#55#0#PHP" expanded="true" />
+            <element signature="e#7#55#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -782,18 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-          <folding>
-            <marker date="1464201886106" expanded="true" signature="2775:2844" placeholder="..." />
-            <marker date="1464201886106" expanded="true" signature="2873:2986" placeholder="..." />
-            <marker date="1464201886106" expanded="true" signature="2933:2976" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/archive.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -807,6 +792,21 @@
         <state relative-caret-position="232">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <marker date="1464283030910" expanded="true" signature="2334:2458" placeholder="..." />
+            <marker date="1464283030910" expanded="true" signature="2381:2458" placeholder="..." />
+            <marker date="1464283030910" expanded="true" signature="2406:2458" placeholder="..." />
+            <marker date="1464283030910" expanded="true" signature="2777:2846" placeholder="..." />
+            <marker date="1464283030910" expanded="true" signature="2875:2988" placeholder="..." />
+            <marker date="1464283030910" expanded="true" signature="2935:2978" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
