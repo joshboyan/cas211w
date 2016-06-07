@@ -25,7 +25,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a>
+                    <?php if ( display_header_text() ) : ?>
+                        <?php if ( get_theme_mod( 'unveil_logo' ) ) : ?>
+                            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                                <img src="<?php echo esc_url( get_theme_mod( 'unveil_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+                        <?php else : ?>
+                            <a class="navbar-brand page-scroll" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->

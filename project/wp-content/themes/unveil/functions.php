@@ -25,6 +25,30 @@ function unveil_setup() {
 
 add_action('after_setup_theme','unveil_setup');
 
+/* Theme support for custom header image*/
+
+$args = array(
+    'width'         => 1200,
+    'height'        => 650,
+    'default-image' => get_template_directory_uri() . '/images/pinwheel.jpg',
+    'uploads'       => true,
+);
+
+add_theme_support( 'custom-header', $args );
+
+$defaults = array(
+    'default-color'          => '',
+    'default-image'          => '',
+    'default-repeat'         => '',
+    'default-position-x'     => '',
+    'default-attachment'     => '',
+    'header-text'            => true,
+    'wp-head-callback'       => '_custom_background_cb',
+    'admin-head-callback'    => '',
+    'admin-preview-callback' => ''
+);
+add_theme_support( 'custom-background', $defaults );
+
 /* Enqueue styles and scripts */
 
 function unveil_scripts() {
@@ -227,3 +251,188 @@ function custom_excerpt_length( $length ) {
     else return 45;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Theme Customizer
+
+function unveil_customizer_register( $wp_customize ) {
+// Add your code inside this Theme Customizer registration function -- your $wp_customize additions go here
+
+// Theme Customizer -- Colors
+// Header Text Color Setting
+    $wp_customize->get_setting( 'header_textcolor' )->default = '#F6F8F8';
+
+// Header Background Color Setting
+    $wp_customize->add_setting( 'header_bg_color', array(
+        'default' => '#1E3D6B'
+    ) );
+
+// Header Background Color Control -- This is a color picker control
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control( $wp_customize, 'header_bg_color',
+            array(
+                'label' => __('Header Background Color', 'unveil'),
+                'section' => 'colors',
+                'settings' => 'header_bg_color',
+            )
+        ) );
+
+    // Home Page Area Colors
+
+    $wp_customize->add_setting('home_area_colors', array(
+        'default'=> 'value1',
+    ));
+
+    $wp_customize->add_control( 'home_area_colors',
+        array(
+            'label'		 => __('Home Section Colors', 'unveil' ),
+            'section'    => 'colors',
+            'settings'   => 'home_area_colors',
+            'type'       => 'radio',
+            'choices'    => array(
+                'value1' => __( 'Standard', 'unveil' ),
+                'value2' => __( 'Reverse', 'unveil' ),
+            ),
+        )
+    );
+
+//Change control order in site identity section
+
+$wp_customize->get_control( 'blogname' )->priority = 10;
+$wp_customize->get_control( 'display_header_text' )->priority = 20;
+$wp_customize->get_control( 'blogdescription' )->priority = 30;
+$wp_customize->get_control( 'site_icon' )->priority = 40;
+
+// Theme Customizer -- Rename and Describe Header Image Section
+ $wp_customize->add_section( 'header_image' , array(
+        'title'      => __( 'Hero Image', 'unveil' ),
+        'description' => 'Change the large hero image that appears on the Home page, the About page (Single Use layout version) and a Blog page if you created one.',
+        'priority' => 60,
+    ) );
+
+    // Theme Customizer -- Logo Uploader
+    $wp_customize->add_section( 'unveil_logo_section' , array(
+        'title'       => __( 'Logo Upload', 'unveil' ),
+        'priority'    => 10,
+        'description' => 'Upload a logo to replace the default site title in the header. The maximum image height is 100px.',
+    ) );
+    $wp_customize->add_setting( 'unveil_logo' );
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control( $wp_customize, 'unveil_logo', array(
+            'label'    => __( 'Logo Uploader', 'unveil' ),
+            'section'  => 'unveil_logo_section',
+            'settings' => 'unveil_logo',
+        ) ) );
+//Change label for featured text
+
+$wp_customize->get_control( 'blogdescription' )->label = __('Feature Text', 'unveil');
+
+// Theme Customizer -- Site Identity  -- Label for checkbox
+    $wp_customize->get_control( 'site_icon' )->label = __( 'Site Icon aka favicon', 'unveil' );
+
+//Label the favicon section
+$wp_customize->get_control( 'display_header_text' )->label = __('Display Site Title', 'unveil');
+}
+
+// Theme Customizer - Home Page Text
+$wp_customize->add_section( 'custom_home_section', array(
+    'title'           => __( 'Home Page Updates', 'unveil' ),
+    'description'     => __( 'Add titles to each section of the Home Page.', 'unveil' ),
+    'priority'        => 10,
+    'active_callback' => 'is_front_page',
+) );
+
+// Control/Setting for First Section Title
+$wp_customize->add_setting( 'welcome_title', array(
+    'default'           => __( 'Welcome to Our Business', 'unveil' ),
+    'sanitize_callback' => 'sanitize_text_field',
+) );
+$wp_customize->add_control( 'welcome_title', array(
+    'priority'    => 10,
+    'section'     => 'custom_home_section',
+    'label'       => __( 'Input a title for the First Section', 'unveil' ),
+    'description' => '',
+) );
+
+// Control/Setting for Second Section Title
+$wp_customize->add_setting( 'prices_title', array(
+    'default'           => __( 'Prices', 'unveil' ),
+    'sanitize_callback' => 'sanitize_text_field',
+) );
+$wp_customize->add_control( 'prices_title', array(
+    'priority'    => 10,
+    'section'     => 'custom_home_section',
+    'label'       => __( 'Input a title for the Second Section', 'unveil' ),
+    'description' => '',
+) );
+
+// Control/Setting for Third Section Title
+$wp_customize->add_setting( 'shopping_title', array(
+    'default'           => __( 'Shopping', 'unveil' ),
+    'sanitize_callback' => 'sanitize_text_field',
+) );
+$wp_customize->add_control( 'shopping_title', array(
+    'priority'    => 10,
+    'section'     => 'custom_home_section',
+    'label'       => __( 'Input a title for the Third Section', 'unveil' ),
+    'description' => '',
+) );
+
+// Control/Setting for Third Section Call to Action Button
+$wp_customize->add_setting( 'call_to_action_title', array(
+    'default'           => __('Visit Our Store', 'unveil'),
+    'sanitize_callback' => 'sanitize_text_field',
+) );
+$wp_customize->add_control( 'call_to_action_title', array(
+    'priority'    => 10,
+    'section'     => 'custom_home_section',
+    'label'       => __( 'Input a title for the Call to Action Button', 'unveil' ),
+    'description' => __( 'Call to Action Button defaults with "Visit Our Store"', 'unveil' ),
+) );
+
+// Control/Setting for Third Section Call to Action Button Link
+$wp_customize->add_setting( 'call_to_action_link', array(
+    'default'           => 'http://yourbusiness.com/shop/',
+    'sanitize_callback' => 'esc_url',
+) );
+$wp_customize->add_control( 'call_to_action_link', array(
+    'type'        =>  'url',
+    'priority'    => 10,
+    'section'     => 'custom_home_section',
+    'label'       => __( 'Link URL for the Call to Action Button', 'unveil' ),
+    'description' => '',
+) );
+
+
+
+add_action( 'customize_register', 'unveil_customizer_register' );
+
+// Add CSS from Theme Customizer to wp_head
+
+function unveil_customizer_css() {
+    ?>
+    <style>
+
+        /*=== Style from The Customizer Colors Section - Header Background Color ===*/
+
+
+        .navbar,
+        .mynav {
+            background-color: <?php echo get_theme_mod( 'header_bg_color' ); ?>;
+
+        }
+        .navbar-default
+        .navbar-nav li a {
+            color: #<?php echo get_theme_mod('header_textcolor'); ?>;
+        }
+
+        <?php if (get_theme_mod('home_area_colors') == 'value2') : ?>
+            body {
+                background-color: #1E3D68;
+                color: #F6F8F8;
+            }
+        <?php endif; ?>
+
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'unveil_customizer_css' );

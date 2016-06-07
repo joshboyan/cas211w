@@ -25,7 +25,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a>
+                    <?php if ( get_theme_mod( 'unveil_logo' ) ) : ?>
+                        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                            <img src="<?php echo esc_url( get_theme_mod( 'unveil_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+                    <?php else : ?>
+                        <a class="navbar-brand page-scroll" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,7 +76,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Unveil Visual Showcase Theme</h1>
-                        <p>This theme is for highly visual industries such as artists, photographers, restaurants. Unveil is built on Bootstrap3 to be fully responsive, mobile ready as well as optimized for search engines and social sharing so you can <em>Unveil</em> your work to the world! </p>
+                        <p><?php bloginfo('description'); ?></p>
                         <p><a role="button" class="btn btn-lg" href="#" role="button">Sign up today</a></p>
                     </div>
                 </div>
