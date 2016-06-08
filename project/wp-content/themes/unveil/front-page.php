@@ -9,7 +9,7 @@
     ================================================== -->
 
     <section id="featured-work">
-        <h2>Featured Work</h2>
+        <h2><?php echo get_theme_mod( 'welcome_title', 'Featured Work' ); ?></h2>
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-sm-4" id="feature1">
@@ -37,14 +37,14 @@
     ================================================== -->
     <section id="shopping">
         <div class="container-fluid shopping-banner">
-            <div class="shopping-btn-container"><a role="button" class="btn btn-primary shopping-btn" href="#" role="button">Shop!</a></div>
+            <div class="shopping-btn-container"><a role="button" class="btn btn-primary shopping-btn" href="<?php echo get_theme_mod( 'call_to_action_link' ); ?>" role="button"><?php echo get_theme_mod( 'call_to_action_title', 'Shop!' ); ?></a></div>
         </div>
     </section><!-- /shopping-->
 
     <!-- Latest work and news
     ================================================== -->
     <section id="latest work and news">
-        <h2>Latest Work and News</h2>
+        <h2><?php echo get_theme_mod( 'news_title', 'Latest Work and News' ); ?></h2>
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <?php

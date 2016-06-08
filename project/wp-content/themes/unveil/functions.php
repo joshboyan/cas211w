@@ -331,7 +331,279 @@ $wp_customize->get_control( 'blogdescription' )->label = __('Feature Text', 'unv
 
 //Label the favicon section
 $wp_customize->get_control( 'display_header_text' )->label = __('Display Site Title', 'unveil');
-}
+
+// Theme Customizer -- Front Page Slideshow
+
+    $wp_customize->add_section(
+        'unveil_slideshow',
+        array(
+            'title'       => __( 'Slideshow', 'unveil' ),
+            'priority'    => 20,
+            'capability'  => 'edit_theme_options',
+            'description' => __( 'Change the images, text and call to action in the slideshow', 'unveil' ),
+        )
+    );
+
+//First slide
+
+    $wp_customize->add_setting(
+        'unveil_first_slide',
+        array(
+            'default'      => get_template_directory_uri() . '/img/steak.jpg',
+            'transport'    => 'refresh'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'unveil_first_slide',
+            array(
+                'label'       => __( 'First Slide', 'unveil' ),
+                'settings'    => 'unveil_first_slide',
+                'section'     => 'unveil_slideshow',
+                'description' => __( 'Recommended image size is approximately 1200x785 pixels', 'unveil' ),
+            )
+        )
+    );
+    // Control/Setting for first slide header
+    $wp_customize->add_setting( 'first_slide_header', array(
+        'default'           => __( 'Unveil visual Showcase', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'first_slide_header', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input header for the first slide', 'unveil' ),
+        'description' => '',
+    ) );
+
+    // Control/Setting for first slide text
+    $wp_customize->add_setting( 'first_slide_text', array(
+        'default'           => __( 'Describe the slide and where the CTA will take them', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'first_slide_text', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input text for the first slide', 'unveil' ),
+        'description' => '',
+        'type' => 'textarea',
+    ) );
+
+    // Control/Setting for first slide Call to Action Button
+    $wp_customize->add_setting( 'first_slide_cta_title', array(
+        'default'           => __('Visit Our Store', 'unveil'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'first_slide_cta_title', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input a title for the Call to Action Button', 'unveil' ),
+        'description' => __( 'Call to Action Button defaults with "Visit Our Store"', 'unveil' ),
+    ) );
+
+// Control/Setting for first slide Call to Action Button Link
+    $wp_customize->add_setting( 'first_slide_cta_link', array(
+        'default'           => 'http://yourbusiness.com/shop/',
+        'sanitize_callback' => 'esc_url',
+    ) );
+    $wp_customize->add_control( 'first_slide_cta_link', array(
+        'type'        =>  'url',
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Link URL for the Call to Action Button', 'unveil' ),
+        'description' => '',
+    ) );
+/* To make this work I need to write a while loop that checks if the checkbox has input, places a counter variable everywhere I use "first", increment the variable  create a unique section then checks the new sections checkbox for input. Front page php needs a similar loop.
+    // Control/Setting adding another slide
+    $wp_customize->add_setting( 'slide_checkbox1', array(
+        'default'           => __( '', 'unveil' ),
+    ) );
+    $wp_customize->add_control( 'slide_checkbox1', array(
+        'priority'    => 90,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Check to add another slide', 'unveil' ),
+        'description' => '',
+        'type' => 'checkbox',
+    ) ); */
+
+    //Second slide
+
+    $wp_customize->add_setting(
+        'unveil_second_slide',
+        array(
+            'default'      => get_template_directory_uri() . '/img/steak.jpg',
+            'transport'    => 'refresh'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'unveil_second_slide',
+            array(
+                'label'       => __( 'Second Slide', 'unveil' ),
+                'settings'    => 'unveil_second_slide',
+                'section'     => 'unveil_slideshow',
+                'description' => __( 'Recommended image size is approximately 1200x785 pixels', 'unveil' ),
+            )
+        )
+    );
+    // Control/Setting for second slide header
+    $wp_customize->add_setting( 'second_slide_header', array(
+        'default'           => __( 'Unveil Visual Showcase', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'second_slide_header', array(
+        'priority'    => 20,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input header for the second slide', 'unveil' ),
+        'description' => '',
+    ) );
+
+    // Control/Setting for second slide text
+    $wp_customize->add_setting( 'second_slide_text', array(
+        'default'           => __( 'Describe the slide and where the CTA will take them', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'second_slide_text', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input text for the second slide', 'unveil' ),
+        'description' => '',
+        'type' => 'textarea',
+    ) );
+
+    // Control/Setting for second slide Call to Action Button
+    $wp_customize->add_setting( 'second_slide_cta_title', array(
+        'default'           => __('Visit Our Store', 'unveil'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'second_slide_cta_title', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input a title for the Call to Action Button', 'unveil' ),
+        'description' => __( 'Call to Action Button defaults with "Visit Our Store"', 'unveil' ),
+    ) );
+
+// Control/Setting for first slide Call to Action Button Link
+    $wp_customize->add_setting( 'second_slide_cta_link', array(
+        'default'           => 'http://yourbusiness.com/shop/',
+        'sanitize_callback' => 'esc_url',
+    ) );
+    $wp_customize->add_control( 'second_slide_cta_link', array(
+        'type'        =>  'url',
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Link URL for the Call to Action Button', 'unveil' ),
+        'description' => '',
+    ) );
+
+    //Third slide
+
+    $wp_customize->add_setting(
+        'unveil_third_slide',
+        array(
+            'default'      => get_template_directory_uri() . '/img/steak.jpg',
+            'transport'    => 'refresh'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'unveil_third_slide',
+            array(
+                'label'       => __( 'Third Slide', 'unveil' ),
+                'settings'    => 'unveil_third_slide',
+                'section'     => 'unveil_slideshow',
+                'description' => __( 'Recommended image size is approximately 1200x785 pixels', 'unveil' ),
+            )
+        )
+    );
+    // Control/Setting for third slide header
+    $wp_customize->add_setting( 'third_slide_header', array(
+        'default'           => __( 'Unveil Visual Showcase', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'third_slide_header', array(
+        'priority'    => 20,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input header for the third slide', 'unveil' ),
+        'description' => '',
+    ) );
+
+    // Control/Setting for third slide text
+    $wp_customize->add_setting( 'third_slide_text', array(
+        'default'           => __( 'Describe the slide and where the CTA will take them', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'third_slide_text', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input text for the third slide', 'unveil' ),
+        'description' => '',
+        'type' => 'textarea',
+    ) );
+
+    // Control/Setting for third slide Call to Action Button
+    $wp_customize->add_setting( 'third_slide_cta_title', array(
+        'default'           => __('Visit Our Store', 'unveil'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'third_slide_cta_title', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input a title for the Call to Action Button', 'unveil' ),
+        'description' => __( 'Call to Action Button defaults with "Visit Our Store"', 'unveil' ),
+    ) );
+
+// Control/Setting for first slide Call to Action Button Link
+    $wp_customize->add_setting( 'third_slide_cta_link', array(
+        'default'           => 'http://yourbusiness.com/shop/',
+        'sanitize_callback' => 'esc_url',
+    ) );
+    $wp_customize->add_control( 'third_slide_cta_link', array(
+        'type'        =>  'url',
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Link URL for the Call to Action Button', 'unveil' ),
+        'description' => '',
+    ) );
+
+// Theme Customizer -- Background Image CSS
+
+    $wp_customize->add_section(
+        'unveil_shopping_area',
+        array(
+            'title'       => __( 'Shopping Area', 'unveil' ),
+            'priority'    => 30,
+            'capability'  => 'edit_theme_options',
+            'description' => __( 'Change the background image in the Shopping Area of the Home Page', 'unveil' ),
+        )
+    );
+
+    $wp_customize->add_setting(
+        'unveil_background_image',
+        array(
+            'default'      => get_template_directory_uri() . '/img/sourdough.jpg',
+            'transport'    => 'refresh'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'unveil_background_image',
+            array(
+                'label'       => __( 'Background Image', 'unveil' ),
+                'settings'    => 'unveil_background_image',
+                'section'     => 'unveil_shopping_area',
+                'description' => __( 'Recommended image size is approximately 1200x785 pixels', 'unveil' ),
+            )
+        )
+    );    
 
 // Theme Customizer - Home Page Text
 $wp_customize->add_section( 'custom_home_section', array(
@@ -343,7 +615,7 @@ $wp_customize->add_section( 'custom_home_section', array(
 
 // Control/Setting for First Section Title
 $wp_customize->add_setting( 'welcome_title', array(
-    'default'           => __( 'Welcome to Our Business', 'unveil' ),
+    'default'           => __( 'Featured Work', 'unveil' ),
     'sanitize_callback' => 'sanitize_text_field',
 ) );
 $wp_customize->add_control( 'welcome_title', array(
@@ -353,19 +625,7 @@ $wp_customize->add_control( 'welcome_title', array(
     'description' => '',
 ) );
 
-// Control/Setting for Second Section Title
-$wp_customize->add_setting( 'prices_title', array(
-    'default'           => __( 'Prices', 'unveil' ),
-    'sanitize_callback' => 'sanitize_text_field',
-) );
-$wp_customize->add_control( 'prices_title', array(
-    'priority'    => 10,
-    'section'     => 'custom_home_section',
-    'label'       => __( 'Input a title for the Second Section', 'unveil' ),
-    'description' => '',
-) );
-
-// Control/Setting for Third Section Title
+// Control/Setting for section Section Title (Not used in this theme)
 $wp_customize->add_setting( 'shopping_title', array(
     'default'           => __( 'Shopping', 'unveil' ),
     'sanitize_callback' => 'sanitize_text_field',
@@ -373,11 +633,11 @@ $wp_customize->add_setting( 'shopping_title', array(
 $wp_customize->add_control( 'shopping_title', array(
     'priority'    => 10,
     'section'     => 'custom_home_section',
-    'label'       => __( 'Input a title for the Third Section', 'unveil' ),
+    'label'       => __( 'Input a title for the second Section', 'unveil' ),
     'description' => '',
 ) );
 
-// Control/Setting for Third Section Call to Action Button
+// Control/Setting for second Section Call to Action Button text
 $wp_customize->add_setting( 'call_to_action_title', array(
     'default'           => __('Visit Our Store', 'unveil'),
     'sanitize_callback' => 'sanitize_text_field',
@@ -389,7 +649,7 @@ $wp_customize->add_control( 'call_to_action_title', array(
     'description' => __( 'Call to Action Button defaults with "Visit Our Store"', 'unveil' ),
 ) );
 
-// Control/Setting for Third Section Call to Action Button Link
+// Control/Setting for second Section Call to Action Button Link
 $wp_customize->add_setting( 'call_to_action_link', array(
     'default'           => 'http://yourbusiness.com/shop/',
     'sanitize_callback' => 'esc_url',
@@ -402,7 +662,18 @@ $wp_customize->add_control( 'call_to_action_link', array(
     'description' => '',
 ) );
 
-
+// Control/Setting for third Section Title
+    $wp_customize->add_setting( 'news_title', array(
+        'default'           => __( 'Latest Work and News', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'news_title', array(
+        'priority'    => 20,
+        'section'     => 'custom_home_section',
+        'label'       => __( 'Input a title for the third Section', 'unveil' ),
+        'description' => '',
+    ) );
+}
 
 add_action( 'customize_register', 'unveil_customizer_register' );
 
@@ -431,6 +702,28 @@ function unveil_customizer_css() {
                 color: #F6F8F8;
             }
         <?php endif; ?>
+
+        /* Style from The Customizer Slideshow section */
+        <?php if ( 0 < count( strlen( ( $first_slide_url = get_theme_mod( 'unveil_first_slide' ) ) ) ) ) { ?>
+        .first-slide {
+            background-image: url( <?php echo $first_slide_url; ?> ); }
+        <?php } // end if ?>
+
+        <?php if ( 0 < count( strlen( ( $second_slide_url = get_theme_mod( 'unveil_second_slide' ) ) ) ) ) { ?>
+        .second-slide {
+            background-image: url( <?php echo $second_slide_url; ?> ); }
+        <?php } // end if ?>
+
+        <?php if ( 0 < count( strlen( ( $third_slide_url = get_theme_mod( 'unveil_third_slide' ) ) ) ) ) { ?>
+        .third-slide {
+            background-image: url( <?php echo $third_slide_url; ?> ); }
+        <?php } // end if ?>
+
+        /* Style from The Customizer Shopping section */
+        <?php if ( 0 < count( strlen( ( $background_image_url = get_theme_mod( 'unveil_background_image' ) ) ) ) ) { ?>
+        .shopping-banner {
+            background-image: url( <?php echo $background_image_url; ?> ); }
+        <?php } // end if ?>
 
     </style>
     <?php

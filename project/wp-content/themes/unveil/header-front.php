@@ -75,9 +75,9 @@
             <div class="item active first-slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Unveil Visual Showcase Theme</h1>
-                        <p><?php bloginfo('description'); ?></p>
-                        <p><a role="button" class="btn btn-lg" href="#" role="button">Sign up today</a></p>
+                        <h1><?php echo get_theme_mod( 'first_slide_header', 'Unveil Visual Showcase' ); ?></h1>
+                        <p><?php echo get_theme_mod( 'first_slide_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
+                        <p><a role="button" class="btn btn-lg" href="><?php echo get_theme_mod( 'first_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'first_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
                     </div>
                 </div>
             </div>
@@ -85,9 +85,9 @@
             <div class="item second-slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Put This Carousel To Work</h1>
-                        <p>This hero image with a link and it's two sisters should be used to highlight your star work and display your major marketing materials in support of your business processes. If you're in to that sort of thing.</p>
-                        <p><a role="button" class="btn btn-lg" href="#" role="button">Learn more</a></p>
+                        <h1><?php echo get_theme_mod( 'second_slide_header', 'Unveil Visual Showcase' ); ?></h1>
+                        <p><?php echo get_theme_mod( 'second_slide_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
+                        <p><a role="button" class="btn btn-lg" href="><?php echo get_theme_mod( 'second_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'second_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
                     </div>
                 </div>
             </div>
@@ -95,9 +95,9 @@
             <div class="item third-slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Make It Look Dope, Suckafish.</h1>
-                        <p>The carousel is going to immediately grab users attention so make a good impression. Ideally you will have two versions of each picture; a 600x600px and a 1400x500px so it looks great in all viewports. </p>
-                        <p><a role="button" class="btn btn-lg" href="#" role="button">Browse gallery</a></p>
+                        <h1><?php echo get_theme_mod( 'third_slide_header', 'Unveil Visual Showcase' ); ?></h1>
+                        <p><?php echo get_theme_mod( 'third_slide_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
+                        <p><a role="button" class="btn btn-lg" href="><?php echo get_theme_mod( 'third_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'third_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
                     </div>
                 </div>
             </div><!-- End third slide -->
