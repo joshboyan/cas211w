@@ -13,17 +13,24 @@
                     
                 </div><!-- /.col-sm-4 -->
                 <div class="col-sm-4 footer-widget3">
-                    <h4>This is footer widget area 3.</h4>
-                    <p>Perhaps for Social media?</p>
+                   
                     <ul>
-                        <li><a class="btn" href="#" target="_blank"><div class="sr-only">Facebook
-                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>
-                        <li><a class="btn" href="#" target="_blank"><div class="sr-only">Twitter page</div><i class="fa
-                        fa-twitter fa-lg"></i></a></li>
-                        <li><a class="btn" href="#" target="_blank"><div class="sr-only">Google+ page</div><i class="fa
-                        fa-google-plus fa-lg"></i></a></li>
-                        <li><a class="btn" href="#" target="_blank"><div class="sr-only">Youtube page</div><i class="fa
-                        fa-youtube fa-lg"></i></a></li>
+                        <?php if (get_theme_mod('facebook_url')) :
+                        echo '<li><a class="btn" href="' . get_theme_mod('facebook_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
+                        <?php if (get_theme_mod('twitter_url')) :
+                            echo '<li><a class="btn" href="' . get_theme_mod('twitter_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
+                        <?php if (get_theme_mod('google_url')) :
+                            echo '<li><a class="btn" href="' . get_theme_mod('google_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
+                        <?php if (get_theme_mod('youtube_url')) :
+                            echo '<li><a class="btn" href="' . get_theme_mod('youtube_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
                     </ul>
                 </div><!-- /.col-sm-4 -->
             </div><!-- /.row -->

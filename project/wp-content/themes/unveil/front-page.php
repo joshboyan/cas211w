@@ -9,7 +9,7 @@
     ================================================== -->
 
     <section id="featured-work">
-        <h2><?php echo get_theme_mod( 'welcome_title', 'Featured Work' ); ?></h2>
+        <h2><?php get_theme_mod( 'welcome_title', 'Featured Work' ); ?></h2>
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-sm-4" id="feature1">

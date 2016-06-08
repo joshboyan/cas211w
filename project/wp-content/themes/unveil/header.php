@@ -37,7 +37,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse mynav" id="bs-example-navbar-collapse-1">
-                   
+
 
                     <?php
                     wp_nav_menu( array(
@@ -68,17 +68,26 @@
             <div class="item active blog-slide">
                 <div class="container">
                     <ul class="carousel-social to_left">
-                        <li><a class="btn social" href="#" target="_blank"><div class="sr-only">Facebook page</div><i class="fa fa-facebook fa-lg"></i></a></li>
-                        <li><a class="btn social" href="#" target="_blank"><div class="sr-only">Twitter page</div><i class="fa
-                        fa-twitter fa-lg"></i></a></li>
-                        <li><a class="btn social" href="#" target="_blank"><div class="sr-only">Google+ page</div><i class="fa
-                        fa-google-plus fa-lg"></i></a></li>
-                        <li><a class="btn social" href="#" target="_blank"><div class="sr-only">Youtube page</div><i class="fa
-                        fa-youtube fa-lg"></i></a></li>
+                        <?php if (get_theme_mod('facebook_url')) :
+                            echo '<li><a class="btn social" href="' . get_theme_mod('facebook_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
+                        <?php if (get_theme_mod('twitter_url')) :
+                            echo '<li><a class="btn social" href="' . get_theme_mod('twitter_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
+                        <?php if (get_theme_mod('google_url')) :
+                            echo '<li><a class="btn social" href="' . get_theme_mod('google_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
+                        <?php if (get_theme_mod('youtube_url')) :
+                            echo '<li><a class="btn social" href="' . get_theme_mod('youtube_url') . '" target="_blank"><div class="sr-only">Facebook
+                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                        endif; ?>
                     </ul>
                     <div class="carousel-caption">
-                        <h1>Curating This Section</h1>
-                        <p>By default this section will show your last three posts. This section gets all of its images and copy from your latest post. Pretty easy huh? People are gonna think you are working so hard to maintain this masterpiece but the theme is designed to make looking good easy! </p>
+                        <h1><?php get_theme_mod( 'blog_header' , 'Curating This Section'); ?></h1>
+                        <p><?php get_theme_mod( 'blog_text' , 'Write a cool intro to the blog pages.'); ?></p>
                     </div>
                 </div>
             </div>

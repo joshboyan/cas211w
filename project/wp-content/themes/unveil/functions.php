@@ -153,7 +153,7 @@ function unveil_sidebars() {
     $args = array(
         'id' => 'main-sidebar',
         'name' => __('Main Right Sidebar', 'unveil'),
-        'description' => ('This is the main sidebar on the right for posts and pages. Used for archive.php, home.php, page.php, and single.php'),
+        'description' => __('This is the main sidebar on the right for posts and pages. Used for archive.php, home.php, page.php, and single.php'),
         'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h4>',
@@ -164,7 +164,7 @@ function unveil_sidebars() {
     $args = array(
         'id' => 'footer-sidebar1',
         'name' => __('Footer Sidebar1', 'unveil'),
-        'description' => ('This is the left footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
+        'description' => __('This is the left footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
         'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h4>',
@@ -175,7 +175,7 @@ function unveil_sidebars() {
     $args = array(
         'id' => 'footer-sidebar2',
         'name' => __('Footer Sidebar2', 'unveil'),
-        'description' => ('This is the center footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
+        'description' => __('This is the center footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
         'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h4>',
@@ -208,7 +208,7 @@ function unveil_sidebars() {
     $args = array(
         'id' => 'half-sidebar-left',
         'name' => __('Half Page Left Sidebar', 'unveil'),
-        'description' => ('This is used on the contact form page template.'),
+        'description' => __('This is used on the contact form page template.'),
         'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h4>',
@@ -219,7 +219,7 @@ function unveil_sidebars() {
     $args = array(
         'id' => 'half-sidebar-right',
         'name' => __('Half Page Right Sidebar', 'unveil'),
-        'description' => ('TThis is used on the contact form page template.'),
+        'description' => __('This is used on the contact form page template.'),
         'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h4>',
@@ -306,7 +306,7 @@ $wp_customize->get_control( 'site_icon' )->priority = 40;
  $wp_customize->add_section( 'header_image' , array(
         'title'      => __( 'Hero Image', 'unveil' ),
         'description' => 'Change the large hero image that appears on the Home page, the About page (Single Use layout version) and a Blog page if you created one.',
-        'priority' => 60,
+        'priority' => 30,
     ) );
 
     // Theme Customizer -- Logo Uploader
@@ -369,7 +369,7 @@ $wp_customize->get_control( 'display_header_text' )->label = __('Display Site Ti
 $wp_customize->add_section( 'custom_home_section', array(
     'title'           => __( 'Home Page Updates', 'unveil' ),
     'description'     => __( 'Add titles to each section of the Home Page.', 'unveil' ),
-    'priority'        => 10,
+    'priority'        => 25,
     'active_callback' => 'is_front_page',
 ) );
 
@@ -973,16 +973,16 @@ $wp_customize->add_control( 'third_marketing_cta_link', array(
         'label'       => __( 'Twitter URL', 'unveil' ),
     ) );
 
-    // Control/Setting for LinkIn Link
-    $wp_customize->add_setting( 'linkedin_url', array(
+    // Control/Setting for Google+ Link
+    $wp_customize->add_setting( 'google_url', array(
         'default'           => '',
         'sanitize_callback' => 'esc_url',
     ) );
-    $wp_customize->add_control( 'linkedin_url', array(
+    $wp_customize->add_control( 'google_url', array(
         'type'        =>  'url',
         'priority'    => 10,
         'section'     => 'social_icons_section',
-        'label'       => __( 'LinkedIn URL', 'unveil' ),
+        'label'       => __( 'Google+ URL', 'unveil' ),
     ) );
 
     // Control/Setting for YouTube Link
@@ -995,6 +995,42 @@ $wp_customize->add_control( 'third_marketing_cta_link', array(
         'priority'    => 10,
         'section'     => 'social_icons_section',
         'label'       => __( 'YouTube URL', 'unveil' ),
+    ) );
+
+// Theme Customizer -- Blog Header
+
+    $wp_customize->add_section(
+        'unveil_blog',
+        array(
+            'title'       => __( 'Blog Header', 'unveil' ),
+            'priority'    => 20,
+            'capability'  => 'edit_theme_options',
+            'description' => __( 'Change the text and heading in the blog header.', 'unveil' ),
+        )
+    );
+// Control/Setting for blog header
+    $wp_customize->add_setting( 'blog_header', array(
+        'default'           => __( 'Curating This Section', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'blog_header', array(
+        'priority'    => 20,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input header for the blog pages', 'unveil' ),
+        'description' => '',
+    ) );
+
+// Control/Setting for blog text
+    $wp_customize->add_setting( 'blog_text', array(
+        'default'           => __( 'Write a cool intro to the blog pages.', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'blog_text', array(
+        'priority'    => 10,
+        'section'     => 'unveil_slideshow',
+        'label'       => __( 'Input text for the blog header', 'unveil' ),
+        'description' => '',
+        'type' => 'textarea',
     ) );
 }
 
@@ -1053,3 +1089,21 @@ function unveil_customizer_css() {
     <?php
 }
 add_action( 'wp_head', 'unveil_customizer_css' );
+
+load_theme_textdomain( 'unveil', get_template_directory_uri() . '/languages' );
+
+// Dashboard Enqueue Scripts
+
+function load_custom_wp_admin_style() {
+    wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/css/admin-style.css', false, '1.0.0' );
+    wp_enqueue_style( 'custom_wp_admin_css' );
+}
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
+
+// Dashboard Footer Customization
+
+function unveil_footer_admin () {
+
+    echo 'Theme by <a href="http://www.unveil.com" target="_blank">Joshy Poo Inc.</a> | Designed by <a href="http://www.joshboyan.com" target="_blank">Josh Boyan</a></p>';
+}
+add_filter('admin_footer_text', 'unveil_footer_admin');

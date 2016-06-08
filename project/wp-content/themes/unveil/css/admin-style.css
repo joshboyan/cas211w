@@ -1,0 +1,7 @@
+/*===== DASHBOARD CUSTOMIZATIONS =====*/
+
+.customize-control-checkbox {
+    border-bottom: solid 2px #aaa;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
