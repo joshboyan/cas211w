@@ -35,12 +35,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse mynav" id="bs-example-navbar-collapse-1">
-                    <form class="navbar-form navbar-right" role="search" action="/search" method="get">
-                        <div class="form-group">
-                            <input type="text" class="form-control " placeholder="Search" id="sitesearch" name="query">
-                            <button type="submit" class="btn form-btn fa fa-search"></button>
-                        </div>
-                    </form>
+                    
 
                     <?php
                     wp_nav_menu( array(
@@ -77,7 +72,7 @@
                     <div class="carousel-caption">
                         <h1><?php echo get_theme_mod( 'first_slide_header', 'Unveil Visual Showcase' ); ?></h1>
                         <p><?php echo get_theme_mod( 'first_slide_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
-                        <p><a role="button" class="btn btn-lg" href="><?php echo get_theme_mod( 'first_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'first_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
+                        <p><a role="button" class="btn btn-lg" href="<?php echo get_theme_mod( 'first_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'first_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
                     </div>
                 </div>
             </div>
@@ -87,7 +82,7 @@
                     <div class="carousel-caption">
                         <h1><?php echo get_theme_mod( 'second_slide_header', 'Unveil Visual Showcase' ); ?></h1>
                         <p><?php echo get_theme_mod( 'second_slide_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
-                        <p><a role="button" class="btn btn-lg" href="><?php echo get_theme_mod( 'second_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'second_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
+                        <p><a role="button" class="btn btn-lg" href="<?php echo get_theme_mod( 'second_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'second_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
                     </div>
                 </div>
             </div>
@@ -97,7 +92,7 @@
                     <div class="carousel-caption">
                         <h1><?php echo get_theme_mod( 'third_slide_header', 'Unveil Visual Showcase' ); ?></h1>
                         <p><?php echo get_theme_mod( 'third_slide_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
-                        <p><a role="button" class="btn btn-lg" href="><?php echo get_theme_mod( 'third_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'third_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
+                        <p><a role="button" class="btn btn-lg" href="<?php echo get_theme_mod( 'third_slide_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'third_slide_cta_title', 'Sign Up Today!' ); ?></a></p>
                     </div>
                 </div>
             </div><!-- End third slide -->

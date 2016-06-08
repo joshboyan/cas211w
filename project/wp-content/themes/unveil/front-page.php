@@ -13,22 +13,22 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-sm-4" id="feature1">
-                <a href="#"><img class="img-circle" src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/baguette.jpg" alt="Generic placeholder image"></a>
-                <h3 class="feature-heading">Most Important</h3>
-                <p>On mobile devices this will be the first thing users see after the carousel. This is where your most impressive offering should go. Gaze pattern mapping suggests this will generally be the first place desktop users look as well...</p>
-                <p><a class="btn" href="#" role="button">View details &raquo;</a></p>
+                <a href="<?php echo get_theme_mod( 'first_marketing_cta_link' ); ?>"><img class="img-circle" src="<?php echo get_theme_mod( 'unveil_first_marketing' ); ?>" alt="<?php echo get_theme_mod( 'first_marketing_alt' ); ?>"></a>
+                <h3 class="feature-heading"><?php echo get_theme_mod( 'first_marketing_header', 'Most Important' ); ?></h3>
+                <p><?php echo get_theme_mod( 'first_marketing_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
+                <p><a class="btn" href="<?php echo get_theme_mod( 'first_marketing_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'first_marketing_cta_title', 'Sign Up Today!' ); ?></a></p>
             </div><!-- /.col-sm-4 -->
             <div class="col-sm-4" id="feature2">
-                <a href="#"><img class="img-circle" src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/pierogis-small.jpg" alt="Generic placeholder image"></a>
-                <h3 class="feature-heading">What Are These?</h3>
-                <p>These 3 section link to the other main pages of your site. The top navigation is a last resort for users. You are guiding their journey with well curated materials and beautiful images. Did you see that hover effect creating great user experiences? Yeah you did...</p>
-                <p><a class="btn" href="#" role="button">View details &raquo;</a></p>
+                <a href="<?php echo get_theme_mod( 'second_marketing_cta_link' ); ?>"><img class="img-circle" src="<?php echo get_theme_mod( 'unveil_second_marketing' ); ?>" alt="<?php echo get_theme_mod( 'second_marketing_alt' ); ?>"></a>
+                <h3 class="feature-heading"><?php echo get_theme_mod( 'second_marketing_header', 'Most Important' ); ?></h3>
+                <p><?php echo get_theme_mod( 'second_marketing_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
+                <p><a class="btn" href="<?php echo get_theme_mod( 'second_marketing_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'second_marketing_cta_title', 'Sign Up Today!' ); ?></a></p>
             </div><!-- /.col-sm-4 -->
             <div class="col-sm-4" id="feature3">
-                <a href="#"><img class="img-circle" src="<?php echo esc_url(get_template_directory_uri() ); ?>/img/grilled.jpg" alt="Generic placeholder image"></a>
-                <h3 class="feature-heading">Setting These Images</h3>
-                <p>Each of these sections links to a static page on your site. The picture is the featured image (and also the hero banner image) you set for that page. The heading that floats up over the picture is the title of that page. This text is in-fact the first text that appears on the page. All this lead to smooth page transitions and good UI...</p>
-                <p><a class="btn" href="#" role="button">View details &raquo;</a></p>
+                <a href="<?php echo get_theme_mod( 'third_marketing_cta_link' ); ?>"><img class="img-circle" src="<?php echo get_theme_mod( 'unveil_third_marketing' ); ?>" alt="<?php echo get_theme_mod( 'third_marketing_alt' ); ?>"></a>
+                <h3 class="feature-heading"><?php echo get_theme_mod( 'third_marketing_header', 'Most Important' ); ?></h3>
+                <p><?php echo get_theme_mod( 'third_marketing_text', 'Describe the slide and where the CTA will take them.' ); ?></p>
+                <p><a class="btn" href="<?php echo get_theme_mod( 'third_marketing_cta_link' ); ?>" role="button"><?php echo get_theme_mod( 'third_marketing_cta_title', 'Sign Up Today!' ); ?></a></p>
             </div><!-- /.col-sm-4 -->
         </div><!-- /.row -->
     </section><!-- /featured work -->
