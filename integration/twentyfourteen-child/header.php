@@ -54,7 +54,7 @@
 					<ul>
 						<li><a href="http://pccwebdesign.com/student203/nifty/index.html">Home</a></li>
 						<li><a href="#features">Services</a></li>
-						<li><a href="#stories">Stories</a></li>                                     <li><a href="#">Shop</a></li>
+						<li><a href="#stories">Stories</a></li>                                     <li><a href="http://pccwebdesign.com/student203/int/shop/">Shop</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
