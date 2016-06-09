@@ -676,4 +676,16 @@ aside#search-2 input[type="submit"] {
 	color: #585C65;
 }
 
+/* Remove breadcrumbs */
+
+.woocommerce-breadcrumb {
+	display: none;
+}
+
+/* WooCommerce Shop Page Product Image Size Correction */
+
+.twentyfourteen .tfwc {
+	max-width: 100%;
+}
+
 
