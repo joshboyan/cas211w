@@ -184,17 +184,6 @@ function unveil_sidebars() {
     register_sidebar( $args );
 
     $args = array(
-        'id' => 'footer-sidebar3',
-        'name' => __('Footer Sidebar3', 'unveil'),
-        'description' => ('This is the right footer sidebar widget area. It is displayed on all posts and pages of your site by default.'),
-        'before-widget' => '<li id="%1$s" class="sidebar-module %2$s">',
-        'after_widget' => '</li>',
-        'before_title' => '<h4>',
-        'after_title' => '</h4>'
-    );
-    register_sidebar( $args );
-
-    $args = array(
         'id' => 'left-sidebar',
         'name' => __('Left Sidebar', 'unveil'),
         'description' => ('This is an alternate sidebar for posts and pages. Used for archive.php, home.php, page.php, and single.php'),
@@ -257,6 +246,10 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 function unveil_customizer_register( $wp_customize ) {
 // Add your code inside this Theme Customizer registration function -- your $wp_customize additions go here
 
+// Remove Background Image Section
+
+    $wp_customize->remove_section('background_image');
+
 // Theme Customizer -- Colors
 // Header Text Color Setting
     $wp_customize->get_setting( 'header_textcolor' )->default = '#F6F8F8';
@@ -303,7 +296,7 @@ $wp_customize->get_control( 'blogdescription' )->priority = 30;
 $wp_customize->get_control( 'site_icon' )->priority = 40;
 
 // Theme Customizer -- Rename and Describe Header Image Section
- $wp_customize->add_section( 'header_image' , array(
+ $wp_customize->remove_section( 'header_image' , array(
         'title'      => __( 'Hero Image', 'unveil' ),
         'description' => 'Change the large hero image that appears on the Home page, the About page (Single Use layout version) and a Blog page if you created one.',
         'priority' => 30,
@@ -332,13 +325,13 @@ $wp_customize->get_control( 'blogdescription' )->label = __('Feature Text', 'unv
 //Label the favicon section
 $wp_customize->get_control( 'display_header_text' )->label = __('Display Site Title', 'unveil');
 
-// Theme Customizer -- Background Image CSS
+// Theme Customizer -- Shopping Background Image CSS
 
     $wp_customize->add_section(
         'unveil_shopping_area',
         array(
             'title'       => __( 'Shopping Area', 'unveil' ),
-            'priority'    => 30,
+            'priority'    => 35,
             'capability'  => 'edit_theme_options',
             'description' => __( 'Change the background image in the Shopping Area of the Home Page', 'unveil' ),
         )
@@ -363,7 +356,7 @@ $wp_customize->get_control( 'display_header_text' )->label = __('Display Site Ti
                 'description' => __( 'Recommended image size is approximately 1200x785 pixels', 'unveil' ),
             )
         )
-    );    
+    );
 
 // Theme Customizer - Home Page Text
 $wp_customize->add_section( 'custom_home_section', array(
@@ -559,7 +552,7 @@ $wp_customize->add_setting( 'second_slide_header', array(
     'sanitize_callback' => 'sanitize_text_field',
 ) );
 $wp_customize->add_control( 'second_slide_header', array(
-    'priority'    => 20,
+    'priority'    => 10,
     'section'     => 'unveil_slideshow',
     'label'       => __( 'Input header for the second slide', 'unveil' ),
     'description' => '',
@@ -590,7 +583,7 @@ $wp_customize->add_control( 'second_slide_cta_title', array(
     'description' => __( 'Call to Action Button defaults with "Visit Our Store"', 'unveil' ),
 ) );
 
-// Control/Setting for first slide Call to Action Button Link
+// Control/Setting for second slide Call to Action Button Link
 $wp_customize->add_setting( 'second_slide_cta_link', array(
     'default'           => 'http://yourbusiness.com/shop/',
     'sanitize_callback' => 'esc_url',
@@ -631,7 +624,7 @@ $wp_customize->add_setting( 'third_slide_header', array(
     'sanitize_callback' => 'sanitize_text_field',
 ) );
 $wp_customize->add_control( 'third_slide_header', array(
-    'priority'    => 20,
+    'priority'    => 10,
     'section'     => 'unveil_slideshow',
     'label'       => __( 'Input header for the third slide', 'unveil' ),
     'description' => '',
@@ -662,7 +655,7 @@ $wp_customize->add_control( 'third_slide_cta_title', array(
     'description' => __( 'Call to Action Button defaults with "Visit Our Store"', 'unveil' ),
 ) );
 
-// Control/Setting for first slide Call to Action Button Link
+// Control/Setting for third slide Call to Action Button Link
 $wp_customize->add_setting( 'third_slide_cta_link', array(
     'default'           => 'http://yourbusiness.com/shop/',
     'sanitize_callback' => 'esc_url',
@@ -675,13 +668,71 @@ $wp_customize->add_control( 'third_slide_cta_link', array(
     'description' => '',
 ) );
 
+// Theme Customizer -- Blog Header
+
+    $wp_customize->add_section(
+        'unveil_blog',
+        array(
+            'title'       => __( 'Blog Header', 'unveil' ),
+            'priority'    => 20,
+            'capability'  => 'edit_theme_options',
+            'description' => __( 'Change the text and heading in the blog header.', 'unveil' ),
+        )
+    );
+    $wp_customize->add_setting(
+        'unveil_blog_slide',
+        array(
+            'default'      => get_template_directory_uri() . '/img/steak.jpg',
+            'transport'    => 'refresh'
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'unveil_blog_slide',
+            array(
+                'label'       => __( 'Hero Image', 'unveil' ),
+                'settings'    => 'unveil_blog_slide',
+                'section'     => 'unveil_blog',
+                'description' => __( 'Recommended image size is approximately 1200x785 pixels', 'unveil' ),
+            )
+        )
+    );
+// Control/Setting for blog slide header
+    $wp_customize->add_setting( 'blog_header', array(
+        'default'           => __( 'Unveil Visual Showcase', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'blog_header', array(
+        'priority'    => 10,
+        'section'     => 'unveil_blog',
+        'label'       => __( 'Input header for the blog slide', 'unveil' ),
+        'description' => '',
+    ) );
+
+// Control/Setting for blog slide text
+    $wp_customize->add_setting( 'blog_text', array(
+        'default'           => __( 'Describe the slide and where the CTA will take them', 'unveil' ),
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'blog_text', array(
+        'priority'    => 10,
+        'section'     => 'unveil_blog',
+        'label'       => __( 'Input text for the third slide', 'unveil' ),
+        'description' => '',
+        'type' => 'textarea',
+    ) );
+
+
+
 // Theme Customizer -- Front Page 1st section marketing
 
 $wp_customize->add_section(
     'unveil_marketing',
     array(
         'title'       => __( '1st Marketing Section', 'unveil' ),
-        'priority'    => 20,
+        'priority'    => 30,
         'capability'  => 'edit_theme_options',
         'description' => __( 'Change the images, text and call to action in the 1st marketing section', 'unveil' ),
     )
@@ -997,41 +1048,6 @@ $wp_customize->add_control( 'third_marketing_cta_link', array(
         'label'       => __( 'YouTube URL', 'unveil' ),
     ) );
 
-// Theme Customizer -- Blog Header
-
-    $wp_customize->add_section(
-        'unveil_blog',
-        array(
-            'title'       => __( 'Blog Header', 'unveil' ),
-            'priority'    => 20,
-            'capability'  => 'edit_theme_options',
-            'description' => __( 'Change the text and heading in the blog header.', 'unveil' ),
-        )
-    );
-// Control/Setting for blog header
-    $wp_customize->add_setting( 'blog_header', array(
-        'default'           => __( 'Curating This Section', 'unveil' ),
-        'sanitize_callback' => 'sanitize_text_field',
-    ) );
-    $wp_customize->add_control( 'blog_header', array(
-        'priority'    => 20,
-        'section'     => 'unveil_slideshow',
-        'label'       => __( 'Input header for the blog pages', 'unveil' ),
-        'description' => '',
-    ) );
-
-// Control/Setting for blog text
-    $wp_customize->add_setting( 'blog_text', array(
-        'default'           => __( 'Write a cool intro to the blog pages.', 'unveil' ),
-        'sanitize_callback' => 'sanitize_text_field',
-    ) );
-    $wp_customize->add_control( 'blog_text', array(
-        'priority'    => 10,
-        'section'     => 'unveil_slideshow',
-        'label'       => __( 'Input text for the blog header', 'unveil' ),
-        'description' => '',
-        'type' => 'textarea',
-    ) );
 }
 
 add_action( 'customize_register', 'unveil_customizer_register' );
@@ -1077,6 +1093,11 @@ function unveil_customizer_css() {
         <?php if ( 0 < count( strlen( ( $third_slide_url = get_theme_mod( 'unveil_third_slide' ) ) ) ) ) { ?>
         .third-slide {
             background-image: url( <?php echo $third_slide_url; ?> ); }
+        <?php } // end if ?>
+
+        <?php if ( 0 < count( strlen( ( $blog_slide_url = get_theme_mod( 'unveil_blog_slide' ) ) ) ) ) { ?>
+        .blog-slide {
+            background-image: url( <?php echo $blog_slide_url; ?> ); }
         <?php } // end if ?>
 
         /* Style from The Customizer Shopping section */

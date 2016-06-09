@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7792f49b-61ff-40a8-a75c-3e21baed6631" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/integration/twentyfourteen-child/style.css" afterPath="$PROJECT_DIR$/integration/twentyfourteen-child/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nifty/index.html" afterPath="$PROJECT_DIR$/nifty/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nifty/nifty.css" afterPath="$PROJECT_DIR$/nifty/nifty.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/two_half_page_sidebars.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/two_half_page_sidebars.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/wp-content/themes/unveil/header.php" afterPath="$PROJECT_DIR$/project/wp-content/themes/unveil/header.php" />
     </list>
     <ignored path="cas211w.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,21 +34,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nifty.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nifty/nifty.css">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="673" column="0" selection-start-line="673" selection-start-column="0" selection-end-line="673" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1340">
+              <caret line="279" column="64" selection-start-line="279" selection-start-column="64" selection-end-line="279" selection-end-column="64" />
+              <folding>
+                <marker date="1465497048700" expanded="true" signature="5137:5403" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="two_half_page_sidebars.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/two_half_page_sidebars.php">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+            <state relative-caret-position="601">
+              <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+              <folding>
+                <marker date="1465492361469" expanded="true" signature="643:840" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="719:835" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="740:795" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="981:1175" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1056:1170" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1077:1131" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1315:1512" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1389:1507" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1410:1464" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1653:1847" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1728:1842" placeholder="..." />
+                <marker date="1465492361469" expanded="true" signature="1749:1803" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1352">
+              <caret line="89" column="85" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
+              <folding>
+                <marker date="1465494809658" expanded="true" signature="3633:3837" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="3716:3832" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="3737:3792" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="3978:4179" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4060:4174" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4081:4135" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4319:4523" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4400:4518" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4421:4475" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4664:4865" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4746:4860" placeholder="..." />
+                <marker date="1465494809658" expanded="true" signature="4767:4821" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-front.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/header-front.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="83" column="134" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="134" />
               <folding />
             </state>
           </provider>
@@ -98,12 +146,10 @@
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/category-news.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/content-comments.php" />
         <option value="$PROJECT_DIR$/project/wp-content/mu-plugins/business_address_widget.php" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/header.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/home.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer-sidebar2.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer-sidebar3.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/style.css" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer1.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer2.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/sidebar-footer3.php" />
@@ -115,13 +161,15 @@
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_with_posts.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_left_sidebar.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/page_fullwidth.php" />
-        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/archive-unveil_product.php" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/search.php" />
         <option value="$PROJECT_DIR$/nifty/index.html" />
         <option value="$PROJECT_DIR$/integration/twentyfourteen-child/style.css" />
         <option value="$PROJECT_DIR$/nifty/nifty.css" />
         <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/two_half_page_sidebars.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/header.php" />
+        <option value="$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php" />
       </list>
     </option>
   </component>
@@ -164,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,7 +344,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,18 +440,19 @@
       <workItem from="1464285928446" duration="610000" />
       <workItem from="1465435960177" duration="90000" />
       <workItem from="1465436256972" duration="3907000" />
+      <workItem from="1465487653377" duration="9195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248545000" />
+    <option name="totallyTimeSpent" value="257740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="434" y="0" width="933" height="728" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3405467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24856816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25429553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853025" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -530,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/header-front.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
@@ -555,13 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/front-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="57" column="119" selection-start-line="57" selection-start-column="84" selection-end-line="57" selection-end-column="127" />
         </state>
       </provider>
     </entry>
@@ -593,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-359">
@@ -611,13 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="61" column="35" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="632" column="30" selection-start-line="632" selection-start-column="30" selection-end-line="632" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -677,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -716,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="33" column="187" selection-start-line="33" selection-start-column="187" selection-end-line="33" selection-end-column="187" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,15 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="228" column="1" selection-start-line="228" selection-start-column="1" selection-end-line="228" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,13 +758,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nifty/nifty.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
+        <state relative-caret-position="11441">
           <caret line="673" column="0" selection-start-line="673" selection-start-column="0" selection-end-line="673" selection-end-column="0" />
           <folding />
         </state>
@@ -770,9 +771,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/page-tempates/two_half_page_sidebars.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
+        <state relative-caret-position="528">
           <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/front-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="632" column="30" selection-start-line="632" selection-start-column="30" selection-end-line="632" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/header-front.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="83" column="134" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="89" column="85" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
+          <folding>
+            <marker date="1465494809658" expanded="true" signature="3633:3837" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="3716:3832" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="3737:3792" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="3978:4179" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4060:4174" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4081:4135" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4319:4523" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4400:4518" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4421:4475" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4664:4865" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4746:4860" placeholder="..." />
+            <marker date="1465494809658" expanded="true" signature="4767:4821" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+          <folding>
+            <marker date="1465492361469" expanded="true" signature="643:840" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="719:835" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="740:795" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="981:1175" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1056:1170" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1077:1131" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1315:1512" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1389:1507" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1410:1464" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1653:1847" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1728:1842" placeholder="..." />
+            <marker date="1465492361469" expanded="true" signature="1749:1803" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/wp-content/themes/unveil/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="279" column="64" selection-start-line="279" selection-start-column="64" selection-end-line="279" selection-end-column="64" />
+          <folding>
+            <marker date="1465497048700" expanded="true" signature="5137:5403" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

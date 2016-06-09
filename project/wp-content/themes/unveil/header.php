@@ -73,21 +73,21 @@
                                     page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
                         endif; ?>
                         <?php if (get_theme_mod('twitter_url')) :
-                            echo '<li><a class="btn social" href="' . get_theme_mod('twitter_url') . '" target="_blank"><div class="sr-only">Facebook
-                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                            echo '<li><a class="btn social" href="' . get_theme_mod('twitter_url') . '" target="_blank"><div class="sr-only">Twitter
+                                    page</div><i class="fa fa-twitter fa-lg"></i></a></li>';
                         endif; ?>
                         <?php if (get_theme_mod('google_url')) :
-                            echo '<li><a class="btn social" href="' . get_theme_mod('google_url') . '" target="_blank"><div class="sr-only">Facebook
-                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                            echo '<li><a class="btn social" href="' . get_theme_mod('google_url') . '" target="_blank"><div class="sr-only">Google+
+                                    page</div><i class="fa fa-google-plus fa-lg"></i></a></li>';
                         endif; ?>
                         <?php if (get_theme_mod('youtube_url')) :
-                            echo '<li><a class="btn social" href="' . get_theme_mod('youtube_url') . '" target="_blank"><div class="sr-only">Facebook
-                                    page</div><i class="fa fa-facebook fa-lg"></i></a></li>';
+                            echo '<li><a class="btn social" href="' . get_theme_mod('youtube_url') . '" target="_blank"><div class="sr-only">YouTube
+                                    page</div><i class="fa fa-youtube fa-lg"></i></a></li>';
                         endif; ?>
                     </ul>
                     <div class="carousel-caption">
-                        <h1><?php get_theme_mod( 'blog_header' , 'Curating This Section'); ?></h1>
-                        <p><?php get_theme_mod( 'blog_text' , 'Write a cool intro to the blog pages.'); ?></p>
+                        <h1><?php echo get_theme_mod( 'blog_header', 'Unveil Visual Showcase' ); ?></h1>
+                        <p><?php echo get_theme_mod( 'blog_text', 'Describe the slide.' ); ?></p>
                     </div>
                 </div>
             </div>
